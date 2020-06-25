@@ -29,7 +29,42 @@ def getDictCount(strs):
     return d
         
     
+#sol 2 using @functools.lru_cache(None) inpython 3 same method
 
+
+class Solution:
+    def findMaxForm(self, s: List[str], m: int, n: int) -> int:
+        global strs
+        global max1
+        max1=0
+        strs=s
+        @functools.lru_cache(None)
+        def solve(i,m,n):
+            global max1
+
+            if(i>=len(strs)):
+                return 0
+            zeros=strs[i].count('0')
+            once=len(strs[i])-zeros
+
+            notInc=solve(i+1,m,n)
+
+            if (m-zeros)<0 or (n-once)<0:
+                # print(i,m,n,notInc)
+                return notInc
+            #if after substraction we get positive value of m and n then we can include that str hence +1
+            inc=1+solve(i+1,m-zeros,n-once)
+
+
+            # print(i,m,n,max(inc,notInc))
+            max1=max(max1,max(inc,notInc))
+            return max(inc,notInc)
+        
+        solve(0,m,n)
+        return max1
+              
+        
+        
 
 
 
