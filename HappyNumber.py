@@ -1,3 +1,6 @@
+
+# Qus : https://leetcode.com/problems/happy-number/submissions/
+
 def sqsum(n):
     sq=0
     while(n!=0):
