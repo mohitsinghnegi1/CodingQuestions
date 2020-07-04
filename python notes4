@@ -1,0 +1,45 @@
+
+--heap notes-----
+
+Qus : how to sort an array using heap without using extra space
+Ans : store the deleted element at the end
+
+Qus : property of heap
+Ans : it is a complete binary tree
+2) if it is a max heap then every node except leaf is greater then all its decendence
+
+
+point to be noted 
+1) if you want to sort an array in decendending order then you have to use min heap
+2) if you want to sort an array in ascending order then you have to use max heap
+3) if you use 1 based indexing then it will be easy to do calculation :how? 
+		current index : i
+		left child index: 2*i+1
+		right child : 2*i+2
+		parent index : just divide by 2 [i/2]  i.e. floor value of i
+		
+4) to insert/delete  an element from the array complexity is O(logn)
+5) to create a heap complexity is O(nlogn) since we are inserting n element into the heap and each insertion takes at max O(logn) tome complexity
+	so overall worse time complexity is O(nlogn)
+
+6)heapyif : direction to to bottom comparision ---triverse from last elemetn of the heap and from second last level nodes start comparing the current node 
+from its left and right direct node and swap it from the node whihc have grater value and this swapping of node with greater child node will continue
+until node becomes leaf node or child nodes are smaller then the current node
+
+7) Amazing fact about heap : if you have array  already pressent then use heapy function to build a heap which will only take O(n) time complexity
+		If you create heap using inserting elemnt approach then it will take O(nlogn) time complexity
+
+Qus :What is Priority queue
+Ans : Higher priority will be executed first
+Point to remember : if you want lower number high priority then create a min heap
+				   if you want higher number higher priority then create a max heap
+				   queue is a best data structure to implement priority queue bec it takes O(logn) time to insrt and delete 
+				   an element on the orther side array takes O(n) time to delete an high priory element from the array
+				   
+				   
+				   
+				   
+
+				   
+
+
