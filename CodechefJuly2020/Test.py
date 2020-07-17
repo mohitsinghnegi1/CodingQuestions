@@ -16,7 +16,7 @@ def solve(infected,x):
         x=x*2
         day+=1
     
-    return [day+2,(infected-1)*2] if infected%2 else [day+2,(infected)*2]
+    return [day+2,(infected)*2] if infected%2 else [day+2,(infected)*2]
     
 
 t=int(input())
