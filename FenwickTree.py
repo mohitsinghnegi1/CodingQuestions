@@ -3,7 +3,7 @@
 a=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 n=len(a)
 #now we want to build binary index tree in following fashion
-#lets dive into how we can build a binary indexed treee
+#lets dive into how we can build a binary indexed tree
 
 # BIT[1]=a[1]
 # BIT[2]=a[1]+a[2]
@@ -33,6 +33,8 @@ n=len(a)
 #                {           a[x],                  if x is odd
 # BIT[x] =                   a[1] + ... + a[x],     if x is power of 2
 #                }
+
+#--part for query : x-=x^(-x)
 
 # Sum of first 12 numbers in array = BIT[12] + BIT[8] = (a[12] +  + a[9]) + (a[8] +   + a[1])
 
@@ -103,7 +105,7 @@ def query(x,BIT):
 # hence at the end sum1 will contain a[14]+a[13]+a[12]+a[11]+a[10]+a[9]+a[8]+a[7]+a[6]+a[5]+a[4]+a[3]+a[2]+a[1]
 
 
-# Note these no of loops indicates no of ranges required to get the sum from 0 to x
+# Note these no of loops indicates no of ranges required to get the sum of element present from index 0 to x
 
 
 #query sum of first 8 element
