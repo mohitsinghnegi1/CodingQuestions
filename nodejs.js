@@ -11,6 +11,9 @@
 // main();
 
 //how to use promises
+a = 1;
+b = '1';
+console.log(b == a);
 
 console.log('first');
 
