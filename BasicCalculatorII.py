@@ -75,3 +75,48 @@ class Solution(object):
             
         return sum1
         
+#efficient approach
+
+class Solution(object):
+    def calculate(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        s="".join(s.split(" "))
+        now=''
+        op='+'
+        stack=[]
+        #mark end since every time operator comes it evalute prev and now with the previous operator
+        s+='#'
+        
+        for i in range(len(s)):
+            #calculate the number
+            if(s[i].isdigit()):
+                now+=s[i]
+                continue
+            
+            #in case prev op == - or + push "now" into stack
+            #else calculate prev * now or prev/now
+            #handle negative number division
+            
+            if(op=='+'):
+                stack.append(int(now))
+            elif(op=='-'):
+                stack.append(-int(now))
+            elif(op=='*'):
+                prev=stack.pop()
+                stack.append(prev*int(now))
+            elif(op=='/'):
+                prev=stack.pop()
+                if(prev<0):
+                    stack.append(-(abs(prev)/int(now)))
+                else:
+                    stack.append(prev/int(now))
+            
+            now=''
+            op=s[i]
+        # print stack
+        return sum(stack)
+            
+        
