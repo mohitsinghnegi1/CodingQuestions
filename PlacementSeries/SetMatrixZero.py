@@ -86,7 +86,7 @@ class Solution(object):
 
 # optimize it further to O(n*m)
 
-#solution with constant space and O(n*m*(n+m)) time complexity
+# solution with constant space and O(n*m*(n+m)) time complexity
 class Solution(object):
     def setZeroes(self, matrix):
         """
@@ -96,16 +96,16 @@ class Solution(object):
         n = len(matrix)
         m = len(matrix[0])
 
-        #we are using this variable because for first row and col
-        #there is only one pos so we will use this new variable to store first col
-        #True if need first col updation
+        # we are using this variable because for first row and col
+        # there is only one pos so we will use this new variable to store first col
+        # True if need first col updation
         col1 = False
 
-        #update first row and first col for respective cell if any of matrix[i][j]==0
+        # update first row and first col for respective cell if any of matrix[i][j]==0
 
         for i in range(n):
 
-            #update col1 value if first column cell value is 0
+            # update col1 value if first column cell value is 0
             if(matrix[i][0] == 0):
                 col1 = True
 
@@ -113,8 +113,8 @@ class Solution(object):
                 if(matrix[i][j] == 0):
                     matrix[i][0] = matrix[0][j] = 0
 
-        #update row value based on first cell or col
-        #if first row or col is 0 then update that cell value to 0
+        # update row value based on first cell or col
+        # if first row or col is 0 then update that cell value to 0
 
         for i in range(1, n):
 
@@ -123,12 +123,12 @@ class Solution(object):
 
                     matrix[i][j] = 0
 
-        #handle first row
+        # handle first row
         if(matrix[0][0] == 0):
             for j in range(m):
                 matrix[0][j] = 0
 
-        #hande first col
+        # hande first col
         if(col1):
             for i in range(n):
                 matrix[i][0] = 0
