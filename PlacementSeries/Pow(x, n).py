@@ -24,7 +24,7 @@ class Solution:
         return power(x, n)
 
 
-# second method
+# second method0-------------------------------
 # we can also use  (x*x)**(n/2)
 
 @lru_cache
