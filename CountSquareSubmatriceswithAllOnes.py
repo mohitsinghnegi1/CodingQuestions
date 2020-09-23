@@ -30,6 +30,7 @@ class Solution(object):
         print matrix
         return count
 
+
 # Follow below syntax to reduct one extra loop
 # for (int i = 0; i < A.size(); ++i):
 #     for (int j = 0; j < A[0].size(); res += A[i][j++]):
