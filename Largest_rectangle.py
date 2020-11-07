@@ -1,4 +1,5 @@
 # Qus : https://www.hackerrank.com/contests/addskill-contest-13/challenges/largest-rectangle
+# QUs : https://leetcode.com/problems/largest-rectangle-in-histogram/
 # SOL:
 
 
