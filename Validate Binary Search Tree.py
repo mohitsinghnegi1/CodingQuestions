@@ -31,3 +31,41 @@ class Solution(object):
         :rtype: bool
         """
         return isBST(root,-sys.maxsize,sys.maxsize)
+
+
+# Using inorder logic
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+import sys
+class Solution(object):
+    def __init__(self):
+        self.val=-sys.maxsize
+        self.flag=True
+    
+    def inorder(self,root):
+        if(root==None or not self.flag):
+            return 
+        self.inorder(root.left)
+        if(self.flag and self.val<root.val):
+            self.val=root.val
+        else:
+            self.flag=False
+            return
+        self.inorder(root.right)
+    
+    
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        self.flag=True
+        self.val=-sys.maxsize
+        
+        self.inorder(root)
+        return self.flag
+        
