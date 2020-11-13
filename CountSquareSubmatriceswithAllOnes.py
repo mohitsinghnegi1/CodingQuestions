@@ -27,7 +27,7 @@ class Solution(object):
                     matrix[i][j] = 1+min(matrix[i][j-1],
                                          matrix[i-1][j], matrix[i-1][j-1])
                     count += matrix[i][j]
-        print matrix
+
         return count
 
 
