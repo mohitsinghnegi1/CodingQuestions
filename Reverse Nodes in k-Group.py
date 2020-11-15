@@ -5,6 +5,8 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+# time complexity O(N) and space complexity O(1)
 def reverse(head1, head):
 
     if(head1.next == None):
