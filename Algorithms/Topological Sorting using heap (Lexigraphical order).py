@@ -1,5 +1,14 @@
 # Qus: https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/tutorial/
 '''
+
+    Brute force :) :
+    Generate all possible permutations
+    check if any permutation satisfy the conditions (in this there are m conditions)
+
+'''
+
+
+'''
     Intution :
     Remember : u->v   means v is dependent on u , which means we need to process u before v
     How to create a indegree graph 
@@ -29,6 +38,21 @@ name = raw_input()          # Reading input from STDIN
 print 'Hi, %s.' % name      # Writing output to STDOUT
 
 # Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+'''
+
+
+'''
+    Test case for ordering case
+    7 7
+    4 1
+    4 5
+    4 6
+    1 2
+    2 3
+    5 3
+    6 7
+
+
 '''
 
 # Write your code here
