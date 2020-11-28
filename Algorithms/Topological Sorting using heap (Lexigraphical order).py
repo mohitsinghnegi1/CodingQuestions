@@ -56,7 +56,7 @@ print 'Hi, %s.' % name      # Writing output to STDOUT
 '''
 
 # Write your code here
-from heapq import heappush, heappop, heapify
+from heapq import heappush, heappop
 n, m = map(int, raw_input().split())
 
 indegree = {}
@@ -80,9 +80,9 @@ for i in range(m):
 
 
 def pushElementWithIndegreeZeroInto(heap):
-    for i in indegree:
-        if(indegree[i] == 0):
-            heappush(heap, i)
+    for j in indegree:
+        if(indegree[j] == 0):
+            heappush(heap, j)
 
 
 # print indegree
