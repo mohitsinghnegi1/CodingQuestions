@@ -10,15 +10,6 @@
 '''
 
 
-'''
-Input :
-1
-5 4
-FIND 4 FIND 1 UNION 3 1 FIND 3
-
-'''
-
-
 def find(arr, x):
     # Code here
 
