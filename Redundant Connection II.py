@@ -4,6 +4,16 @@
 
 # optimised solution using union find
 # time complexity  O(edges*logn)~ O(edges*1) with path compression
+
+"""
+    Intution :
+    2 cases 
+    1. Either there is a loop and all the nodes have one parent there is no root
+    2. One of the node have two parent and we need to remove the node which is the part of the loop
+
+"""
+
+
 class Solution(object):
     def findRedundantDirectedConnection(self, edges):
         """
@@ -54,11 +64,10 @@ class Solution(object):
             if(parU == parV):
                 # if possible edge is still there then return it else return the last encountered                   # node
                 # this is the case when we have removed the wrong edge or having a loop
-                # A vertex has more than 1 parent, and is part of a loop.
                 return possibleEdge1 if possibleEdge1 else [u, v]
 
             # do union by rank and compression
-            if(par[parU] > par[parV]):
+            if(-par[parU] > -par[parV]):
 
                 par[parU] += par[parV]
                 par[v] = parU
