@@ -1,0 +1,13 @@
+COMMAND+ D  : to select multiple same words
+COMMAND + L : To Select entire line
+Command + /
+Shift + arrow(left,right) : select the text 
+Command + arrow (left,right,top,bottom) : to move in estreme right,left,top,bottom
+Command + shift + arrow(left,right) : to select entire line
+Option + arrow(left,right) : to move word by word
+Option + Shift +  arrow(left,right) : to select word one by one
+Option + SHift + arrow(up,down) : copy the selected text beleow or above
+Option + arrow(up,down)  : move line up and down
+Command + P : switch between files
+Command + P + P : switch between last two files
+Tab to add automatic completion 
