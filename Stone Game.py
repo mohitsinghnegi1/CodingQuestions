@@ -89,3 +89,8 @@ class Solution1(object):
             return d[(l, r)]
 
         return isAliceWinner(piles, aliceScore=0, leeScore=0, aliceTurn=1, l=0, r=len(piles)-1)
+
+
+class Solution2:
+    def stoneGame(self, piles):
+        return True
