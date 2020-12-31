@@ -94,3 +94,6 @@ class Solution1(object):
 class Solution2:
     def stoneGame(self, piles):
         return True
+
+
+# you can try out dp as well
