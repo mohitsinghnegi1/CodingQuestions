@@ -114,3 +114,4 @@ class Solution3(object):
         # also it will make easy to get left and right sum
 
         return findDiff(0, n-1, sum(stones))
+        #
