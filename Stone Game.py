@@ -96,4 +96,26 @@ class Solution2:
         return True
 
 
+class Solution3(object):
+    def stoneGame(self, piles):
+        """
+        :type piles: List[int]
+        :rtype: bool
+        """
+
+        n = len(piles)
+        d = {}  # all array or dict is pass is accessable as a global object
+
+        def alexRelativeScore(l, r):
+            if((l, r) in d):
+                return d[(l, r)]
+
+            if(l == r):
+                return piles[l]
+
+            d[(l, r)] = max(piles[l]-alexRelativeScore(l+1, r),
+                            piles[r]-alexRelativeScore(l, r-1))
+            return d[(l, r)]
+
+        return alexRelativeScore(l=0, r=n-1) > 0
 # you can try out dp as well
