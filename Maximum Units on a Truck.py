@@ -5,6 +5,7 @@ class Solution(object):
         :type boxTypes: List[List[int]]
         :type truckSize: int
         :rtype: int
+
         """
         # sort boxTypes in reverse order on the bases of number of units per box
         boxTypes.sort(key=lambda x: x[1], reverse=True)
