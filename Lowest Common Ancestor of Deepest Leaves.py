@@ -64,3 +64,66 @@ class Solution(object):
         node, level = recurse(root)
         print level
         return node
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
+# recursion approach (Using binary search property)
+class Solution3(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+        """
+            Intution : 
+            #  it just wants us to find the split point. The point from where
+            #  p and q won't be part of the same subtree or when one is the parent of the other.
+        """
+
+        def findLCA(root, p, q):
+
+            if(p.val < root.val and q.val < root.val):
+                return findLCA(root.left, p, q)
+            if(p.val > root.val and q.val > root.val):
+                return findLCA(root.right, p, q)
+            return root
+
+        return findLCA(root, p, q)
+
+# iterative approach (Using binary search property)
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
+class Solution4(object):
+    def lowestCommonAncestor(self, root, p, q):
+        """
+        :type root: TreeNode
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: TreeNode
+        """
+
+        # we dont require stack bec we dont need to backtrack
+
+        node = root
+        while(True):
+
+            if(p.val < node.val and q.val < node.val):
+                node = node.left
+            elif(p.val > node.val and q.val > node.val):
+                node = node.right
+            else:
+                return node
