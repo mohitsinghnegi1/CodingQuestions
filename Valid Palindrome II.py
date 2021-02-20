@@ -1,4 +1,5 @@
 # QUs:https://leetcode.com/problems/valid-palindrome-ii/
+# best resource : https://www.geeksforgeeks.org/remove-character-string-make-palindrome/
 
 class Solution(object):
     def validPalindrome(self, s):
