@@ -1,5 +1,8 @@
 # Qus:https://leetcode.com/problems/satisfiability-of-equality-equations/
 
+from collections import defaultdict
+
+
 class Solution(object):
     def equationsPossible(self, equations):
         """
@@ -177,5 +180,66 @@ class Solution2(object):
                 par1 = findSetPar(a)
                 par2 = findSetPar(b)
                 if(par1 == par2):
+                    return False
+        return True
+
+
+class Solution3(object):
+    def equationsPossible(self, equations):
+        """
+        :type equations: List[str]
+        :rtype: bool
+        """
+        """
+            Keep in mind in case of undirectional - use visited to not to reback to same direction in a             graph.
+            Also make sure to initialize dict in case a!=b .
+            Note in case of a !=b a should be initialized with set() in case not available same for b               aslo
+        
+        """
+
+        d = defaultdict(set)
+
+        for eq in equations:
+            a = eq[0]
+            b = eq[3]
+            a = ord(a)-ord('a')
+            b = ord(b)-ord('a')
+            if(eq[1] != '!'):
+
+                d[a].add(b)
+                d[b].add(a)
+            else:
+                if(a not in d):
+                    d[a] = set()
+                if(b not in d):
+                    d[b] = set()
+
+        # print d
+        colors = [-1]*26
+
+        # do dfs():
+        def dfs(idx, color):
+            if(idx not in d):
+                return
+            colors[idx] = color
+            for i in d[idx]:
+                # print colors
+                if(colors[i] == -1):
+                    dfs(i, color)
+
+        color = 0
+        for i in d:
+            if(colors[i] == -1):
+                dfs(i, color)
+                color += 1
+
+        # print colors
+        # process not equations
+        for eq in equations:
+            if(eq[1] == '!'):
+                aVal = ord(eq[0])-ord('a')
+                bVal = ord(eq[3])-ord('a')
+
+                if(colors[aVal] != -1 and colors[aVal] == colors[bVal]):
                     return False
         return True
