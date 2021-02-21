@@ -58,7 +58,7 @@ class Solution(object):
 #         self.next = next
 
 
-class Solution(object):
+class Solution2(object):
     def oddEvenList(self, head):
         """
         :type head: ListNode
