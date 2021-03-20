@@ -1,4 +1,16 @@
 # Qus:https://leetcode.com/problems/redundant-connection/
+
+"""
+Steps to solve union find problems 
+
+When programming, convenient to name them 0 to N-1.
+• Hide details not relevant to union-find.
+• Integers allow quick access to object-related info.
+• Could use symbol table to translate from object names
+
+"""
+
+
 class Solution(object):
     def findRedundantConnection(self, edges):
         """
