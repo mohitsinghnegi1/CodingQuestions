@@ -7,7 +7,7 @@ When programming, convenient to name them 0 to N-1.
 • Hide details not relevant to union-find.
 • Integers allow quick access to object-related info.
 • Could use symbol table to translate from object names
-
+Each union command reduces by 1 the number of components
 """
 
 

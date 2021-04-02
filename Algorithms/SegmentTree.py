@@ -1,6 +1,11 @@
 # Qus:https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/tutorial/
 # Resource:https://www.youtube.com/watch?v=-dUiRtJ8ot0
 
+# concepts :
+# 1. total number of nodes in a segment tree is 2n-1
+# the max size of segment tree required is equal to 2* pow(h) - 1 where h = int(ceil(log(n)))
+
+
 '''
 # Sample code to perform I/O:
 

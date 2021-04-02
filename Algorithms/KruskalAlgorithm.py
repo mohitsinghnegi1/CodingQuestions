@@ -3,6 +3,9 @@
 # kushkal is genrally applied on connected graph
 # if kushkal is applied on disonnected graph then it will give minimum spanning tree of all disonnected components
 
+from collections import defaultdict
+
+
 class Graph(object):
 
     def __init__(self, v):
@@ -61,3 +64,69 @@ g.addEdge(1, 3, 15)
 g.addEdge(2, 3, 4)
 
 g.krushkalMST()
+
+
+# 2nd time revision
+# Qus: https: // leetcode.com/problems/min-cost-to-connect-all-points/
+
+
+def find(par, u):
+
+    while(par[u] > 0):
+        u = par[u]
+    return u
+
+
+def findMSTCostUsingKruskalAlgo(lists, edges):
+    # we will use krushkal algorithm to find
+
+    lists.sort(reverse=True)
+
+    addedEdges = 0
+    totalCost = 0
+
+    par = [-1]*(edges+1)
+
+    while(addedEdges != edges):
+        w, u, v = lists.pop()
+
+        paruIdx, parvIdx = find(par, u), find(par, v)
+
+        if(paruIdx != parvIdx):
+
+            par[paruIdx] = parvIdx
+
+            totalCost += w
+            addedEdges += 1
+
+    return totalCost
+
+
+def constructGraph(points):
+    graph = defaultdict(list)
+    lists = []
+    for u in range(len(points)):
+        for v in range(u+1, len(points)):
+
+            x1, y1 = points[u]
+            x2, y2 = points[v]
+            weight = abs(x2-x1)+abs(y2-y1)
+            graph[u].append([v, weight])
+            lists.append((weight, u, v))
+
+    return graph, lists
+
+
+class Solution2(object):
+    def minCostConnectPoints(self, points):
+        """
+        :type points: List[List[int]]
+        :rtype: int
+        """
+        graph, lists = constructGraph(points)
+        # print graph
+        # u ->(v,w) # its a dense graph each point connects to every other points
+
+        cost = findMSTCostUsingKruskalAlgo(lists, len(points)-1)
+
+        return cost

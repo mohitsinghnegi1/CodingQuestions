@@ -2,6 +2,8 @@
     No need to detect cycle using union find in primes and dijkastra
     it is similar to bfs but using heap and visited
     check if node already in visited then dont triverse , set elemtn in visited list only after processing it (after poping from the heap)
+    In primes graph gives a minimum spanning tree within a component while in kruskal it gives minimum spanning tree in all
+    components
 """
 
 
