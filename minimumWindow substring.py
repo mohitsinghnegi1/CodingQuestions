@@ -3,6 +3,8 @@
 
 
 from collections import defaultdict
+from collections import defaultdict, Counter
+import sys
 
 
 def validWindow(c1, c2):
@@ -63,3 +65,56 @@ class Solution(object):
 
                     l += 1
         return o
+
+
+# approach 2 more optimized
+
+
+class Solution2(object):
+    def minWindow(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+
+        tfreq = defaultdict(int)
+        sfreq = defaultdict(int)
+
+        for char in t:
+            tfreq[char] += 1
+
+        s1 = []
+
+        for i in range(len(s)):
+            if(s[i] in tfreq):
+                s1.append([i, s[i]])
+
+        i = 0
+
+        ans = (-sys.maxsize, sys.maxsize)
+
+        def isValid(st, ed, count):
+            if(ed-st) < len(t):
+                return False
+
+            for char in tfreq:
+
+                if(count[char] < tfreq[char]):
+                    return False
+
+            return True
+
+        for (j, (end, char)) in enumerate(s1):
+
+            sfreq[char] += 1
+
+            while(i < len(s1) and isValid(s1[i][0], s1[j][0]+1, sfreq)):
+
+                if ((s1[j][0]+1) - s1[i][0]) < (ans[1]-ans[0]):
+                    ans = (s1[i][0], s1[j][0]+1)
+
+                sfreq[s1[i][1]] -= 1
+                i += 1
+
+        return s[ans[0]:ans[1]] if ans != (-sys.maxsize, sys.maxsize) else ""
