@@ -12,37 +12,26 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-
-        global sum1
-        sum1 = 0
-
-        def findSum(root):
-            global sum1
+        def getSum(root):
 
             if(root == None):
-                return
+                return 0
+
+            sum1 = 0
 
             if(root.val % 2 == 0):
-                # if the value of root is even then add sum of its grandchilderens
-                if(root.left):
 
-                    if(root.left.left):
-                        sum1 += root.left.left.val
-                    if(root.left.right):
-                        sum1 += root.left.right.val
+                if(root.left and root.left.left):
+                    sum1 += root.left.left.val
+                if(root.left and root.left.right):
+                    sum1 += root.left.right.val
 
-                if(root.right):
+                if(root.right and root.right.left):
+                    sum1 += root.right.left.val
 
-                    if(root.right.left):
-                        sum1 += root.right.left.val
-                    if(root.right.right):
-                        sum1 += root.right.right.val
-            # move in its childs
-            if(root.left):
-                findSum(root.left)
-            if(root.right):
-                findSum(root.right)
+                if(root.right and root.right.right):
+                    sum1 += root.right.right.val
 
-        findSum(root)
+            return sum1 + getSum(root.left)+getSum(root.right)
 
-        return sum1
+        return getSum(root)
