@@ -44,3 +44,51 @@ class Solution(object):
         # if we have s[i]=='0' then there is only one possiblity of creating
         # a correct decode string if s[i-1:i+1]<26 and >10 then it will be
         # equal to dp[i-2]
+
+# using recursion and memorization
+
+
+class Solution2(object):
+    def numDecodings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        """
+        Intution : if the current s have first char 0 then this the the invalid way of decoding
+        
+        if we are able to decode the string till string gets over then this is the valid way of decoding
+        """
+
+        # for memorization
+        d = {}
+
+        # this function will return number of ways a string can be decoded
+        def getWays(s):
+
+            # if we reach the end of string without any error then this is a valid decoding
+            if(s == ""):
+                return 1
+
+            # in case we encounter first char of string as 0 that mean we can reach to end of string using proper
+            # decoding
+            if(s[0] == '0'):
+                return 0
+
+            # memo
+            if(s in d):
+                return d[s]
+
+            # if first char is valid then we can move one step forward
+            one = getWays(s[1:])
+            two = 0
+
+            # we can move two step forward if len is >=2 and first char is non zero and the s[:2] is less then 26
+            if(len(s) >= 2 and int(s[:2]) >= 10 and int(s[:2]) <= 26):
+                two = getWays(s[2:])
+
+            # memo
+            d[s] = one + two
+            return d[s]
+
+        return getWays(s)
