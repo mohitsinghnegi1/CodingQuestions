@@ -119,3 +119,50 @@ class Solution3(object):
             return a or b
 
         return subset(nums, 0, 0, total)
+
+
+class Solution4(object):
+    def canPartition(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        total = sum(nums)
+        if(total % 2):
+            return False
+
+        matrix = [[False for j in range(sum(nums)/2+1)]
+                  for i in range(len(nums)+1)]
+        # print matrix
+        matrix[0][0] = True
+
+        nums = [0]+sorted(nums)
+        for i in range(len(nums)):
+
+            # we dont care how many items are there we can always form sum = 0
+            matrix[i][0] = True
+
+        # matrix[i][j] = i element j th sum is this possible -- kya possible hai first i element ko use karke j sum banana
+
+        # print matrix
+        for i in range(len(nums)):
+            # we have only i items
+
+            for j in range(1, sum(nums)/2+1):
+                # we need to make j sum is this possible
+
+                # take  -- if we take item i can we form j sum
+                if(j-nums[i] >= 0):
+                    # i am doing i -1 bec we need to pick the item first time
+                    matrix[i][j] = matrix[i-1][j-nums[i]]
+                    # so we must not pick it second it matrix[i][j-nums[i]] means someone might already have pickked i item
+                    # so always use i-1 if non repeated
+
+                # dont take -- if we dont take item i can we form sum j
+                matrix[i][j] = matrix[i][j] or matrix[i-1][j]
+
+                # if(i==2 and j==6):
+                #     print j-nums[i],2,1
+                #     print matrix[i][j]
+        print matrix
+        return matrix[-1][-1]
