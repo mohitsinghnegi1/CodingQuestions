@@ -41,7 +41,7 @@ class Solution(object):
 
 # optimal solution using 2d array O(n^n)
 
-class Solution(object):
+class Solution2(object):
     def canPartition(self, nums):
         """
         :type nums: List[int]
@@ -85,3 +85,37 @@ class Solution(object):
                                 1][j] or (out[i-1][j-nums[i]]) if (j-nums[i] >= 0) else False
 
         return out[-1][-1]
+
+
+# tle revision
+
+class Solution3(object):
+    def canPartition(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        total = sum(nums)
+        if(total % 2):
+            return False
+
+        def subset(nums, i, sum1, total):
+
+            if(i >= len(nums)):
+                return False
+
+            if(sum1 == total/2):
+                return True
+
+            if(sum1 > total/2):
+                return False
+
+            # include
+            a = subset(nums, i+1, sum1+nums[i], total)
+
+            # exclude
+            b = subset(nums, i+1, sum1, total)
+
+            return a or b
+
+        return subset(nums, 0, 0, total)
