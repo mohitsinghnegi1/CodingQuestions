@@ -9,7 +9,7 @@
 # https://www.geeksforgeeks.org/allocate-minimum-number-pages/
 # https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/
 # https://www.geeksforgeeks.org/check-whether-the-two-binary-search-trees-are-identical-or-not/
-# https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
+# https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/   ---pending
 # https://www.geeksforgeeks.org/deepest-left-leaf-node-in-a-binary-tree/
 # https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/
 # https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
