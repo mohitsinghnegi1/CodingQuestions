@@ -45,3 +45,13 @@
 # Deadlock / Semaphore / Critical Section
 # Working of OSI Layers(CN)
 # What happens if I type ‘google.com’ as URL. Explain the whole process.
+
+#  ACID properties in DBMS
+
+#  OSI model vs TCP/IP model
+
+#  Discussed about deadlocks
+
+# https://www.geeksforgeeks.org/find-number-of-islands/
+# https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+# LRU cache
