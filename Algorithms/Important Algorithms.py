@@ -13,13 +13,14 @@
 # https://www.geeksforgeeks.org/deepest-left-leaf-node-in-a-binary-tree/
 # https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/
 # https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
-# Find an element in rotated sorted array. -- pending
+# Find an element in rotated sorted array.
 # https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
 # https://www.geeksforgeeks.org/print-all-combinations-of-balanced-parentheses/
 # https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 # https://www.geeksforgeeks.org/print-left-view-binary-tree/
-# https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
+# https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/ --pending
 # create a linked list
+# https://www.geeksforgeeks.org/find-number-of-islands/
 
 
 # And questions on os(Explain Banker’s algorithm with an example, Thrashing, Deadlock, Semaphore, etc), DBMS(ACID properties), oops, and projects.
@@ -52,6 +53,6 @@
 
 #  Discussed about deadlocks
 
-# https://www.geeksforgeeks.org/find-number-of-islands/
+
 # https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
 # LRU cache
