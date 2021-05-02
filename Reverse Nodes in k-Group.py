@@ -87,3 +87,54 @@ class Solution(object):
             prev.next = temp
 
         return newHead
+
+
+# easy way recursion
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+def reverse(head, count, k):
+
+    if(count < k):
+        return head
+    # reverse a linked list using iterative method
+
+    prev = None
+    ptr = head
+    next1 = None
+    c = 0  # to keep track of how many nodes to reverse
+    while(ptr and c < k):  # c<k bec we need prev which is end of reversed k nodes
+        # now we need to reverse the direction of next pointer
+        # so we need a pointer to next node for reference later
+        # Remember we are reversing the next pointer of current node
+        next1 = ptr.next
+
+        ptr.next = prev
+        prev = ptr
+        ptr = next1
+        c += 1
+
+    count -= c
+
+    if(ptr != None):
+        # we know if ptr!=None we need to reverse next k nodes
+        # and set next of current head as (result of next reversal)
+        head.next = reverse(ptr, count, k)
+
+    # first reversal head
+    return prev
+
+
+class Solution(object):
+    def reverseKGroup(self, head, k):
+
+        ptr = head
+        count = 0
+        while(ptr):
+            count += 1
+            ptr = ptr.next
+
+        # keep track of count so that we don't reverse the last remaining part
+        return reverse(head, count, k)

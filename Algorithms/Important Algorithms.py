@@ -9,7 +9,7 @@
 # https://www.geeksforgeeks.org/allocate-minimum-number-pages/
 # https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/
 # https://www.geeksforgeeks.org/check-whether-the-two-binary-search-trees-are-identical-or-not/
-# https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/   ---pending
+# https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
 # https://www.geeksforgeeks.org/deepest-left-leaf-node-in-a-binary-tree/
 # https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/
 # https://www.geeksforgeeks.org/count-possible-decodings-given-digit-sequence/
@@ -18,7 +18,7 @@
 # https://www.geeksforgeeks.org/print-all-combinations-of-balanced-parentheses/
 # https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
 # https://www.geeksforgeeks.org/print-left-view-binary-tree/
-# https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/ --pending
+# https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
 # create a linked list
 # https://www.geeksforgeeks.org/find-number-of-islands/
 
@@ -37,6 +37,11 @@
 # The time when you innovate something
 # The time when you pushing your idea
 # The time when your idea was rejected
+# Time when you went above and beyond your job responsibilities?
+# Received negative feedback from manager and how you responded?
+# Time when you failed to meet your commitment?
+# Tell me about a time when you innovated and exceeded the expectation?
+# Time when you went above and beyond your job responsibilities?
 
 # Why Amazon, Why leaving current organization in 6 months, What do you bring to the table?
 
@@ -48,11 +53,53 @@
 # What happens if I type ‘google.com’ as URL. Explain the whole process.
 
 #  ACID properties in DBMS
-
+# Difference between HashMap and HashTable.
+# What is Concurrent HashMap
+# Difference Between Collections and Set.
+# What is Constructor? It’s use case with an example.
+# Explain Polymorphism with its Types with an Example.
+# Difference Between Call by Value and Call By Reference. Give Example. Which we have to use and when?. I gave an example similar to Reader-Writer Problem. He simplifies it by making a master process that can update a variable. 5 slave processes can only read it. Slaves can execute concurrently, but when a master is writing, slaves can’t access the variable and vice versa. Which processes can use call by value and which can use call by reference. Explain. I was able to properly explain it and he seemed satisfied.
+# A Situational Based Question – Have you ever tried moving out of your comfort zone?? When and how it impacted Business and your life.
 #  OSI model vs TCP/IP model
 
 #  Discussed about deadlocks
-
+# 1. How are recursion and iteration handled by the compiler.
+# 2. How differently are a linked list and array stored in memory.
+# 3. Difference between multiprocessing and multithreading.
+# 4. All normal forms in DBMS.
+# What is process?
+# Difference between process and thread?
+# What is thrashing?
+# What is normalization in database?
+# What is the best normal form?
+# What are procedures in database?
+# What are indexing?
+# Tell me how you learn a new technology?
+# Time when you didn’t meet a deadline?
+# Tell me a time you took some on some risk?
+# https://leetcode.com/discuss/interview-question/437082/Amazon-Behavioral-questions-or-Leadership-Principles-or-LP
 
 # https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
 # LRU cache
+# https://practice.geeksforgeeks.org/problems/prime-number-of-set-bits4632/1
+# https://practice.geeksforgeeks.org/problems/rearrange-characters/0
+# https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1
+# https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
+# https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1     -done
+# https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+# https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1
+# https: // www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+# https: // www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/
+# https: // www.geeksforgeeks.org/find-next-greater-number-set-digits/
+# https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/?ref=rp
+# https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
+# https://leetcode.com/problems/rotting-oranges/
+# https://www.geeksforgeeks.org/find-all-possible-trees-with-given-inorder-traversal/
+# https://www.geeksforgeeks.org/program-count-numbers-fingers/
+# https://www.geeksforgeeks.org/python-converting-all-strings-in-list-to-integers/
+#  https://www.geeksforgeeks.org/program-to-check-if-two-given-matrices-are-identical/
+# https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1    -- done
+# https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1
+# https://practice.geeksforgeeks.org/problems/peak-element/1
+# https://practice.geeksforgeeks.org/problems/count-number-of-words1500/1/
+# https://practice.geeksforgeeks.org/problems/rotate-and-delete-1587115621/1
