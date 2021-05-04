@@ -94,12 +94,12 @@
 # https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/?ref=rp
 # https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
 # https://leetcode.com/problems/rotting-oranges/
-# https://www.geeksforgeeks.org/find-all-possible-trees-with-given-inorder-traversal/
+# https://www.geeksforgeeks.org/find-all-possible-trees-with-given-inorder-traversal/   --done
 # https://www.geeksforgeeks.org/program-count-numbers-fingers/
 # https://www.geeksforgeeks.org/python-converting-all-strings-in-list-to-integers/
 #  https://www.geeksforgeeks.org/program-to-check-if-two-given-matrices-are-identical/
 # https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1    -- done
-# https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1
-# https://practice.geeksforgeeks.org/problems/peak-element/1
-# https://practice.geeksforgeeks.org/problems/count-number-of-words1500/1/
+# https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1                   -- done
+# https://practice.geeksforgeeks.org/problems/peak-element/1                            -- done
+# https://practice.geeksforgeeks.org/problems/count-number-of-words1500/1/              -- done
 # https://practice.geeksforgeeks.org/problems/rotate-and-delete-1587115621/1
