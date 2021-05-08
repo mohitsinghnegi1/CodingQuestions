@@ -45,7 +45,7 @@
 
 # Why Amazon, Why leaving current organization in 6 months, What do you bring to the table?
 
-********** AMAZON LEADERSHIP PRINICIPLES QUESTION ** *****************
+# ********** AMAZON LEADERSHIP PRINICIPLES QUESTION ** *****************
 # Tell me about yourself.
 # Tell me about current company(team) and your role in it
 # What are you looking for in next company
@@ -122,3 +122,15 @@
 # https://practice.geeksforgeeks.org/problems/peak-element/1                            -- done
 # https://practice.geeksforgeeks.org/problems/count-number-of-words1500/1/              -- done
 # https://practice.geeksforgeeks.org/problems/rotate-and-delete-1587115621/1
+
+# Last 7 days
+# 1. Algoithms Revision
+# 2. Quick revision of all solved problems
+# 3. Mock Interview Practice
+
+# Last 2 days Revision
+# 1. HR questions
+# 2. DBMS, Operating System, Networking
+
+# For More Amazon Questions
+# https: // github.com/yashasvigirdhar/Interview-Preparation/blob/master/algo-problem-solving/AlgoNotes.md
