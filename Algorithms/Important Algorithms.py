@@ -1,5 +1,10 @@
 # https://hjweds.gitbooks.io/leetcode/content/
-
+# Coding Sheet
+# https://docs.google.com/spreadsheets/d/1qS2-2AHpFoiw8ar6LuN9R5hVu79-bIGj-8c1BeCB9wg/edit#gid=597084628
+# Assignment sheet
+# https://docs.google.com/spreadsheets/d/1Qq7CG61bPmyi7zx8lMdUIATwoOe8dPgqRsyRcPDRSJA/edit?ts=5f916b4e#gid=0
+# Assessment sheet for my batch
+# https://docs.google.com/spreadsheets/d/1RCzr2-Fx7ob-elzZ8OO_iQKk3SYtOwlzNUC8_GHHfbw/edit?ts=5ec1359a#gid=0
 
 # Pending
 # https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/
@@ -105,7 +110,7 @@
 # https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1                  --done
 # https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1         --done
 # https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1                  --done
-# https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+# https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1         --done
 # https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1               --done
 # https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/                         --done
 # https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/              --done
