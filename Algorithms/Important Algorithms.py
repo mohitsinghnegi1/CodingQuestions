@@ -102,16 +102,15 @@
 # LRU cache
 # https://practice.geeksforgeeks.org/problems/prime-number-of-set-bits4632/1
 # https://practice.geeksforgeeks.org/problems/rearrange-characters/0
-# https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1
-# https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
-# https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1     -done
+# https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1                  --done
+# https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1         --done
+# https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1                  --done
 # https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
-# https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1
-# https: // www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
-# https: // www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/
-# https: // www.geeksforgeeks.org/find-next-greater-number-set-digits/
-# https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/?ref=rp
-# https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
+# https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1               --done
+# https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+# https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/              --done
+# https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/?ref=rp  --done
+# https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/            --done
 # https://leetcode.com/problems/rotting-oranges/                                        --done
 # https://www.geeksforgeeks.org/find-all-possible-trees-with-given-inorder-traversal/   --done
 # https://www.geeksforgeeks.org/program-count-numbers-fingers/                          --done
