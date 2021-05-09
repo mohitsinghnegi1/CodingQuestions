@@ -107,7 +107,7 @@
 # https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1                  --done
 # https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
 # https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1               --done
-# https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+# https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/                         --done
 # https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/              --done
 # https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/?ref=rp  --done
 # https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/            --done
