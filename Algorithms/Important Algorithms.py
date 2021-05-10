@@ -106,7 +106,7 @@
 # https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
 # LRU cache
 # https://practice.geeksforgeeks.org/problems/prime-number-of-set-bits4632/1
-# https://practice.geeksforgeeks.org/problems/rearrange-characters/0
+# https://leetcode.com/problems/reorganize-string/                                     --done
 # https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1                  --done
 # https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1         --done
 # https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1                  --done
