@@ -104,7 +104,7 @@
 # https://leetcode.com/discuss/interview-question/437082/Amazon-Behavioral-questions-or-Leadership-Principles-or-LP
 
 # https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/         --done
-# LRU cache
+# LRU cache                                                                            --done
 # https://practice.geeksforgeeks.org/problems/prime-number-of-set-bits4632/1           --done
 # https://leetcode.com/problems/reorganize-string/                                     --done
 # https://practice.geeksforgeeks.org/problems/root-to-leaf-path-sum/1                  --done
@@ -159,3 +159,13 @@ de.append(4)
 de.appendleft(6)
 de.pop()
 de.popleft()
+
+# Time complexity of deque
+# as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity.
+# append() :- This function is used to insert the value in its argument to the right end of deque.
+# appendleft() :- This function is used to insert the value in its argument to the left end of deque.
+# pop() :- This function is used to delete an argument from the right end of deque.
+# popleft() :- This function is used to delete an argument from the left end of deque.
+#  rotate() :- This function rotates the deque by the number specified in arguments. If the number specified is negative, rotation occurs to left. Else rotation is to right.
+# https://www.geeksforgeeks.org/deque-in-python/
+# to delete an eleemnt in the middle use del dequeu[index] or deq.remove(item)  time complexity is O(n)
