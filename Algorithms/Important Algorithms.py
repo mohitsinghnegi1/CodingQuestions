@@ -136,5 +136,7 @@
 # 1. HR questions
 # 2. DBMS, Operating System, Networking
 
+# last day : see the syntext , complexity chart
+
 # For More Amazon Questions
 # https: // github.com/yashasvigirdhar/Interview-Preparation/blob/master/algo-problem-solving/AlgoNotes.md
