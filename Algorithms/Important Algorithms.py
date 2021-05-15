@@ -169,3 +169,8 @@ de.popleft()
 #  rotate() :- This function rotates the deque by the number specified in arguments. If the number specified is negative, rotation occurs to left. Else rotation is to right.
 # https://www.geeksforgeeks.org/deque-in-python/
 # to delete an eleemnt in the middle use del dequeu[index] or deq.remove(item)  time complexity is O(n)
+
+
+TODO: Just seen
+# https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/
+# - sort the Array , fix first use j as i+1  and k as n-1  use while(j<k) and see if condition matches using two pointer
