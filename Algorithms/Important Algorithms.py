@@ -103,7 +103,7 @@
 # Tell me a time you took some on some risk?
 # https://leetcode.com/discuss/interview-question/437082/Amazon-Behavioral-questions-or-Leadership-Principles-or-LP
 
-# https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+# https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/         --done
 # LRU cache
 # https://practice.geeksforgeeks.org/problems/prime-number-of-set-bits4632/1           --done
 # https://leetcode.com/problems/reorganize-string/                                     --done
@@ -137,6 +137,25 @@
 # 2. DBMS, Operating System, Networking
 
 # last day : see the syntext , complexity chart
+# resume related preparation
 
 # For More Amazon Questions
 # https: // github.com/yashasvigirdhar/Interview-Preparation/blob/master/algo-problem-solving/AlgoNotes.md
+
+
+# other
+import collections
+a = Solution()
+
+# OrderedDict :  When you iterate over an OrderedDict object, items are traversed in the original order .
+# If you update the value of an existing key, then the order remains unchanged.
+# delete item from the end if not passed it will by default pop from the begining like a queue
+- methods: popitem(last=True)  # i is small
+- method: move_to_end(key, last=True)
+# TIme complexity O(1)
+# initializing deque
+de = collections.deque([1, 2, 3])
+de.append(4)
+de.appendleft(6)
+de.pop()
+de.popleft()
