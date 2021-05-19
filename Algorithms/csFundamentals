@@ -1,0 +1,38 @@
+1. Momory management in python : https://www.youtube.com/watch?v=arxWaw-E8QQ
+-> every thing is object in python -> type(x) -> <class 'int'>
+-> x = 5  and then y = x both x and y refer to same memory location -> you can verify it using id(x)==id(y)
+-> python optimise the memory if an object is already created with same value then z = 5 x and z will refer to same id
+-> python is dynamically typed language -> YOU CAN REASSIGN A VARIABLE TO different object hence change the reference
+-> Inside Ram there are two type of memory stack , heap where stack stores the fucntion and reference variables and heap stores the
+objects
+-> In Ram some memory is being allocated to process , os, application , share memory
+-> python interpretator keeps track of object and the number of reference mapping
+-> whenever reference count becomes 0 python runs a garbage collector that removes the deadObject the algorithm is known as Reference counting
+-> weakref.ref(object) does not increment the the reference count
+-> stack frames are createed in stack memory and are distroyed as soon as the function returns  
+
+Is python an interpretator language
+https://www.youtube.com/watch?v=vZu-khdQUqI 
+
+
+Python is an object oriented programming language like Java
+How is DFS and BFS different and what are the tradeoffs?
+DFS uses Stack to find the shortest path. BFS is better when target is closer to Source. DFS is better when target is far from source. As BFS 
+considers all neighbour so it is not suitable for decision tree used in puzzle games.
+
+SQl vs NoSql
+https://www.guru99.com/sql-vs-nosql.html
+
+distributed system
+https://www.youtube.com/watch?v=ajjOEltiZm4
+distributed cache
+https://www.youtube.com/watch?v=U3RkDLtS7uY
+
+Process synchronisation
+https://www.youtube.com/watch?v=3Eaw1SSIqRg
+
+What is paging | memory management
+https://www.youtube.com/watch?v=6c-mOFZwP_8
+
+Socket programming
+https://www.youtube.com/watch?v=u4kr7EFxAKk

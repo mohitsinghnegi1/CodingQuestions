@@ -174,8 +174,21 @@ de.popleft()
 TODO: Just seen
 # https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/
 # - sort the Array , fix first use j as i+1  and k as n-1  use while(j<k) and see if condition matches using two pointer
+# - https://practice.geeksforgeeks.org/problems/merge-sort-on-doubly-linked-list/1
+# - https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1
+# - https://practice.geeksforgeeks.org/problems/quick-sort/1
+
+
+# 1.  DBMS, OOPS, NETWORKIN, OPERATING SYSTEM -- MOND
+# 2.  MOCK INTERVIEW  -- TUESDAY
+# 3.  LP QUESTIONS -- WED _ THRUSDAY
+# 4.  RESUME GO THROUGH -- FRIDAY SATURDAY SUNDAY
+# 5.  REVISE ALGORITHMS & TIME COMPLEXITY & SYNTEX   -- SATURDAY
+# 6.  QUICKLY GO THROUGH THE QUESTIONS IN CODING SHEET --SUNDAY
+
+
 # https://www.geeksforgeeks.org/finding-all-subsets-of-a-given-set-in-java/
 
 
-# least common ansister
+# least common ansister --DONE
 # Construct a doubly linked list :https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/
