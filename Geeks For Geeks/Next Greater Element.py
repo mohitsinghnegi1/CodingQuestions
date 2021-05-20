@@ -68,3 +68,46 @@ if __name__ == '__main__':
             print (res[i], end=" ")
         print ()
 # } Driver Code Ends
+
+
+# recursive approach
+class Solution(object):
+
+    def longestBeautifulSubstring(self, word):
+        """
+        :type word: str
+        :rtype: int
+        """
+
+        if(len(word) < 5):
+            return 0
+
+        d = {
+            'a': ['a', 'e'],
+            'e': ['e', 'i'],
+            'i': ['i', 'o'],
+            'o': ['o', 'u'],
+            'u': ['u']
+        }
+
+        ans = [0]
+
+        def findLongestBeautiful(word, i, prev, btful):
+            if(i >= len(word)):
+                return
+
+            if((prev == '' or prev == 'a') and word[i] == 'a'):
+                findLongestBeautiful(word, i+1, word[i], btful+1)
+            elif(prev != '' and word[i] in d[prev]):
+                if(word[i] == 'u'):
+                    ans[0] = max(ans[0], btful+1)
+                findLongestBeautiful(word, i+1, word[i], btful+1)
+            else:
+                if(word[i] == 'a'):
+                    findLongestBeautiful(word, i+1, word[i], 1)
+                else:
+                    findLongestBeautiful(word, i+1, '', 0)
+
+        findLongestBeautiful(word, 0, word[0] if word[0] == 'a' else '', 0)
+
+        return ans[0]
