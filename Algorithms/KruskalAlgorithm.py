@@ -130,3 +130,57 @@ class Solution2(object):
         cost = findMSTCostUsingKruskalAlgo(lists, len(points)-1)
 
         return cost
+
+# 3rd time revision
+
+
+class Solution(object):
+
+    def computeCostSet(self, points, n):
+
+        costSet = []
+
+        for i in range(n):
+            for j in range(i+1, n):
+
+                cost = abs(points[i][0]-points[j][0]) + \
+                    abs(points[i][1]-points[j][1])
+                costSet.append((cost, i, j))
+        # print costSet
+        return costSet
+
+    def minCostConnectPoints(self, points):
+        """
+        :type points: List[List[int]]
+        :rtype: int
+        """
+        n = len(points)
+
+        costSet = self.computeCostSet(points, n)
+        # [(w,u,v)]
+        costSet.sort()
+        cost = 0
+        par = [-1]*(len(points))
+
+        def find(u):
+            while(par[u] > 0):
+                u = par[u]
+            return u
+
+        edges = 0
+
+        for w, u, v in costSet:
+
+            parU = find(u)
+            parV = find(v)
+
+            if(parU != parV):  # no cycle then add to total weight
+                cost += w
+                # do union
+                par[parU] = parV
+
+                edges += 1
+                if(edges == n-1):
+                    break
+
+        return cost
