@@ -10,6 +10,7 @@
 
 '''
 
+import sys
 from collections import defaultdict
 # Your task is to complete this function
 # Function should return Topologically Sorted List
@@ -85,3 +86,98 @@ for i in range(e):
 # return stack in reverse order
 out = topoSort(n, graph)
 print(out)
+
+
+# iterative way using stack and indegree with kye as  node value as count , outegree u-> [v1,v2]
+
+
+class Solution:
+
+    # Function to return list containing vertices in Topological order.
+    def topoSort(self, V, adj):
+        # Code here
+
+        # indegree means , i am dependent on other
+        # v is dependent on u
+
+        indegree = {}
+        # O(n)
+        for i in range(len(adj)):
+            indegree[i] = 0
+        # outdegree = defaultdict(set)
+
+        for u in range(len(adj)):
+            for v in adj[u]:
+                indegree[v] += 1
+                # outdegree[u].add(v)
+
+        # now we have indegree map , it will tell how many nodes the ky is dependent on
+
+        # first process all the 0 degree
+        topo = []
+        stack = []
+
+        def addZeroIndegree():
+            for v in indegree:
+                if(indegree[v] == 0):
+                    stack.append(v)
+
+        addZeroIndegree()
+
+        while(stack):
+            u = stack.pop()
+            topo.append(u)
+
+            # now i have remove a node whose indegree was 0
+            # we can check if all node nodes he is pointing to -1 will make their
+            # indegree 0
+
+            for v in adj[u]:
+                indegree[v] -= 1
+                if(indegree[v] == 0):
+                    stack.append(v)
+
+        if len(adj) != len(topo):
+            return -1
+
+        return topo
+
+
+# {
+#  Driver Code Starts
+# Driver Program
+sys.setrecursionlimit(10**6)
+
+
+def check(graph, N, res):
+    map = [0]*N
+    for i in range(N):
+        map[res[i]] = i
+    for i in range(N):
+        for v in graph[i]:
+            if map[i] > map[v]:
+                return False
+    return True
+
+
+if __name__ == '__main__':
+    t = int(input())
+    for i in range(t):
+        e, N = list(map(int, input().strip().split()))
+        adj = [[] for i in range(N)]
+
+        for i in range(e):
+            u, v = map(int, input().split())
+            adj[u].append(v)
+
+        ob = Solution()
+
+        res = ob.topoSort(N, adj)
+
+        if check(adj, N, res):
+            print(1)
+        else:
+            print(0)
+# Contributed By: Harshit Sidhwa
+
+# } Driver Code Ends
