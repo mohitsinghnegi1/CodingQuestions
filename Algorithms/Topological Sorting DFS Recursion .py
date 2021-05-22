@@ -1,5 +1,6 @@
 # Qus : https://practice.geeksforgeeks.org/problems/topological-sort/1#
-
+# video : https://www.youtube.com/watch?v=Yh6EFazXipA     u - > v   u comes first in toplogical sort  this recursion is possible for DAG
+# time complexity is O(v+E)
 '''
     Implement Topological sort using recursion
 
@@ -36,7 +37,7 @@ def topoSort(n, adj):
     # we can maintain a 3 state unprocessed -0 processing -1 processed-2
     # https://codeforces.com/blog/entry/4907
 
-    # In this function we are first append child in stack then root
+    # In this function we  first append child in stack then root
     # if we already visited the child node then we will not process it again
 
     def topologicalSort(val):
@@ -146,6 +147,81 @@ class Solution:
 # {
 #  Driver Code Starts
 # Driver Program
+sys.setrecursionlimit(10**6)
+
+
+def check(graph, N, res):
+    map = [0]*N
+    for i in range(N):
+        map[res[i]] = i
+    for i in range(N):
+        for v in graph[i]:
+            if map[i] > map[v]:
+                return False
+    return True
+
+
+if __name__ == '__main__':
+    t = int(input())
+    for i in range(t):
+        e, N = list(map(int, input().strip().split()))
+        adj = [[] for i in range(N)]
+
+        for i in range(e):
+            u, v = map(int, input().split())
+            adj[u].append(v)
+
+        ob = Solution()
+
+        res = ob.topoSort(N, adj)
+
+        if check(adj, N, res):
+            print(1)
+        else:
+            print(0)
+# Contributed By: Harshit Sidhwa
+
+# } Driver Code Ends
+
+
+# revision using recursion
+
+
+# question to ask from interviewer if this graph is acyclic or not , if not
+# what should i print then
+class Solution:
+
+    # Function to return list containing vertices in Topological order.
+    def topoSort(self, V, adj):
+        # Code here
+
+        visited = {}
+        stack = []  # push the child then the parent always
+
+        def dfs(v):
+
+            visited[v] = True  # we have viisted this child first
+
+            # let suppose it is the par of someone then there will be adj child
+            for nei in adj[v]:
+                if(nei not in visited):
+                    dfs(nei)  # this will make sure that put the child first in stack
+
+            # put it back into stack (ie if no one is dependent on it
+            # then just it will be only child that is dependent on other)
+            stack.append(v)
+
+        for v in range(len(adj)):
+
+            if(v not in visited):
+                dfs(v)
+        stack.reverse()
+        return stack
+# {
+#  Driver Code Starts
+# Driver Program
+
+
 sys.setrecursionlimit(10**6)
 
 
