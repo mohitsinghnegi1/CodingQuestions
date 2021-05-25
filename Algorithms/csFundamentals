@@ -36,3 +36,39 @@ https://www.youtube.com/watch?v=6c-mOFZwP_8
 
 Socket programming
 https://www.youtube.com/watch?v=u4kr7EFxAKk
+
+Segmentation vs pagination
+https://www.youtube.com/watch?v=dz9Tk6KCMlQ
+
+What is Page Fault? How to handle it?
+https://www.youtube.com/watch?v=2YbZD3GHwlU
+
+What is Thrashing?
+https://www.youtube.com/watch?v=IyWaK8pbN6A
+- Thus a high degree of multiprogramming and lack of frames are two main causes of thrashing in the Operating system.
+
+What is Belady’s Anomaly?
+https://www.youtube.com/watch?v=pR1uhp--COc
+- In computer storage, Bélády's anomaly is the phenomenon in which increasing the number of page frames results in an increase in the number of page faults for certain memory access patterns.
+- This phenomenon is commonly experienced when using the first-in first-out page replacement algorithm.
+
+What is a semaphore?
+https://www.youtube.com/watch?v=eoGkJWgxurQ
+
+Differences between mutex and semaphore?
+- https://www.youtube.com/watch?v=8wcuLCvMmF8
+
+What is a Critical Section?
+https://www.youtube.com/watch?v=qMQsd7Iy5jo
+
+What is a deadlock?
+https://www.youtube.com/watch?v=rWFH6PLOIEI
+
+4 necessary conditions of deadlock
+1. mutual exclusion
+2. no premetion
+3. hold and wait 
+4. circular wait
+
+Implement a deadlock situation using JAVA.
+https://www.youtube.com/watch?v=Op1E5nXOSUQ
