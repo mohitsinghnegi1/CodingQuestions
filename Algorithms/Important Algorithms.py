@@ -68,7 +68,21 @@
 # Tell me about one of your failures/mistakes.
 # How do you prioritize different tasks coming to the team?
 # Tell me about a time when you brought a change by asking questions
-
+# Tell me a time when you had a conflict with the product team over some requirement and how did you handle it -- start vote
+# Tell me about a time when you had to work out of your comfort zone  -- game not found issue
+# Tell about any project you did in which you have used new technology that was not known to you. So,
+# this question basically talks about Amazon’s Leadership Principles: Dive Deep, Learn and be Curious  -- amazon dynamo db
+# Have You Faced Any Tight Deadline How Did You Handled It -- ISBR
+# The time when you received negative feedback from your manager -- Be Responsive -- give regural update -- i was just buzy at completing my work
+# Why Amazon: This is a question that is being asked to everyone. You do not want to miss this question.
+# 10 mistakes to avoid in Amazon interview
+# How to answer in Amazon behavior interview
+# 5 most asked question during the interview
+# How to answer Amazon Interview Question: Tell me about a time you failed
+# Tell me about your strengths. What is your greatest weakness?
+# What’s the most innovative new idea that you have implemented?
+# How To Answer Ownership Principle Questions During The Amazon Interview
+# Answering Amazon Interview Question: Do you collaborate well? (team communication & negotiation)
 
 # Paging / Virtual Memory
 # CPU Scheduling Algorithm
@@ -193,3 +207,7 @@ TODO: Just seen
 # least common ansister --DONE
 # Construct a doubly linked list :https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/
 # https: // www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+
+
+
+# https://www.geeksforgeeks.org/amazon-interview-questions/ --- vvvvvvv good bideo
