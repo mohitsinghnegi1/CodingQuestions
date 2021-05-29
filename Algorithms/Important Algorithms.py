@@ -209,5 +209,27 @@ TODO: Just seen
 # https: // www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
 
 
-
 # https://www.geeksforgeeks.org/amazon-interview-questions/ --- vvvvvvv good bideo
+
+# https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed  ---- patterns
+
+
+New Operating system questions
+Detailed explanation of need and working of Virtual Memory in Operating System
+Overview of pages and page faults
+
+
+HR:
+Why Amazon?
+
+# - 1. Tier 3 college, aspiration to get into Amazon, and be on the top don't want to be an average person,last time i gave interview
+# but unfortunately i was not able to clear it, since then i was practicing deaily coding questions, improving the mistaks that i did last time
+# - 2. Amazon is full of talented people, and I want to improve my skills and get knowlege from them, and wanted to work
+# in a large scaled project which can impect many life, I wanted to understand their approach of solving problems and be a part of
+# end to end lifecycle of large scaled projects at amazon
+
+
+Which was the most difficult interview round and why?
+Did you solve all the questions in all the rounds?
+Given the fact that your current company is also good, why are switching the company at such an early stage of your career? (Reason for asking this was because it had only been two months since I had started my first job)
+What were the mistakes that you have committed in your current job and what did you learn from it?
