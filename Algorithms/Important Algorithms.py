@@ -42,11 +42,11 @@ import collections
 seemed to have a lot of potential but also had some “red flags” or things that worried me. It ended up being a big mistake.
 They had a poor attitude and dragged the team down until my CEO had to fire them. I learned to be more careful
 and not rush my decisions and to speak with others on my team who have more experience if I’m unsure of something.
-    I also realized how important each hiring decision is, which made me a better manager in the last few years of my career.
+    I also realized how important each hiring decision is , which made me a better manager in the last few years of my career.
     Since then, I’ve hired eight new people and never had a bad experience like this again. But it was a great lesson to learn
     early in my career.
 # The time when measuring customer experience -- user feedback
-# The time when you got bad feedback from your manager -- about mail of work done 
+# The time when you got bad feedback from your manager -- about mail of work done
 # The time when you help a teammate -- new joiner Shaurya, Guru, Surbhi in leadsquared
 # The time when you innovate something -- voting systerm , at the end we lost but we learned a lot of things
 # The time when you pushing your idea -- base template
@@ -91,15 +91,15 @@ It would help me to push my limits and get out of my comfort zone and I am sure 
 
 """
 # Amazon Leadership Principles
-# Tell me an area where you think you can improve. -- deploymenent, communication 
+# Tell me an area where you think you can improve. -- deploymenent, communication
 # Tell me a time when you created an innovative product -- voting system
 # Tell me about a time when you took a creative approach to solving a problem. -- solved ball sort puzzle with less compleixty
 # Give me an example of when you took a risk and it failed. (hiring new joiner)
 # Walk us through a time when you helped a customer through a difficult process and what that looked like. -- NA
-# Tell me about a time when had conflict with your manager/team member. 
+# Tell me about a time when had conflict with your manager/team member.
 # Tell me about a time when you could have stopped working but persisted. -- after amazon rejection i continued coding
 # Tell me about a time when you received critical feedback from someone.
-# Tell me about a time when you had to deal with a poor performer on your team. -- new hire 
+# Tell me about a time when you had to deal with a poor performer on your team. -- new hire
 # Tell me about a time where you overcame an obstacle and delivered results. -- murder chat game not found issue
 # Tell me about one of your failures/mistakes. -- hackathone focused more on quantity and impractile project
 # How do you prioritize different tasks coming to the team? -- customer centic projects first , then hig priority project with tight deadlines , the other minor tasks
@@ -119,6 +119,9 @@ It would help me to push my limits and get out of my comfort zone and I am sure 
 # What’s the most innovative new idea that you have implemented? -- may be games with randomization with least complexity
 # How To Answer Ownership Principle Questions During The Amazon Interview
 # Answering Amazon Interview Question: Do you collaborate well? (team communication & negotiation)
+# Tell me about a time you helped someone.   -- shubham
+# Tell me about a time you faced a group conflict.  -- voting to start game
+# When was the time you faced a failure and what did you do to overcome it? -- hackathone microsoft
 
 # Paging / Virtual Memory
 # CPU Scheduling Algorithm
