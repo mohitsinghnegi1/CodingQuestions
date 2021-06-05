@@ -28,49 +28,85 @@
 # https://www.geeksforgeeks.org/find-number-of-islands/
 
 
-# And questions on os(Explain Banker’s algorithm with an example, Thrashing, Deadlock, Semaphore, etc), DBMS(ACID properties), oops, and projects.
+# And questions on os(Explain Banker’s algorithm with an example, Thrashing, Deadlock, Semaphore, etc), DBMS(ACID properties), oops, and projects. --done
 
 
 # Alternate reversal of linked list in a group of size k. Like the first group should be reversed, the second group should be the same, the third should be reversed, the fourth should be the same, etc.
 
 # Given a social network and 2 people, find the shortest friends path between them
 
-# The time when you fail commitment,
-# The time when measuring customer experience
-# The time when you got bad feedback from your manager
-# The time when you help a teammate
-# The time when you innovate something
-# The time when you pushing your idea
-# The time when your idea was rejected
-# Time when you went above and beyond your job responsibilities?
-# Received negative feedback from manager and how you responded?
-# Time when you failed to meet your commitment?
-# Tell me about a time when you innovated and exceeded the expectation?
-# Time when you went above and beyond your job responsibilities?
+# The time when you fail commitment.--for example - commitment to give 2-3 h dailty to coding
 
-# Why Amazon, Why leaving current organization in 6 months, What do you bring to the table?
+import collections
+- In my last job, our CEO gave me a chance to interview and hire entry-level people for our team. I chose to hire someone who
+seemed to have a lot of potential but also had some “red flags” or things that worried me. It ended up being a big mistake.
+They had a poor attitude and dragged the team down until my CEO had to fire them. I learned to be more careful
+and not rush my decisions and to speak with others on my team who have more experience if I’m unsure of something.
+    I also realized how important each hiring decision is, which made me a better manager in the last few years of my career.
+    Since then, I’ve hired eight new people and never had a bad experience like this again. But it was a great lesson to learn
+    early in my career.
+# The time when measuring customer experience -- user feedback
+# The time when you got bad feedback from your manager -- about mail of work done 
+# The time when you help a teammate -- new joiner Shaurya, Guru, Surbhi in leadsquared
+# The time when you innovate something -- voting systerm , at the end we lost but we learned a lot of things
+# The time when you pushing your idea -- base template
+# The time when your idea was rejected
+# Time when you went above and beyond your job responsibilities? -- Testing, helping people ouside of the team , debugging and finding bugs , participated in testing and helping frontend team to fix bugs
+# Received negative feedback from manager and how you responded?
+# Time when you failed to meet your commitment? -- regural problem solving
+# Tell me about a time when you innovated and exceeded the expectation? -- portal that i creater with least possible time
+# Time when you went above and beyond your job responsibilities?
+# Why Amazon, Why leaving current organization in 6 months, What do you bring to the table? -- i am not bound to only my job responsibility , i am open to any task which require creative thinking
+
+# Failed to meet the deadlines
+"""n college I had two essays due within a couple days of each other. I mentally switched the due dates for them in my head,
+ so while I submitted one early, the other one was submitted a day late. It was a silly mistake on my end. I talked to the 
+ professor about the situation, and while I was marked down a few points, I still managed to get a "B" on the assignment. 
+ The professor recommended that I start keeping track of all assignments in detail in either a journal or on my phone so 
+ that something like this would not happen again. I maintained such records throughout 
+the rest of my academic career and never submitted something late again, and that habit has since come in handy in the workforce.
+"""
+
+# Example Answers to “Tell Me a Time When You Failed”
+"""ans :I was managing a project for one of our biggest clients in my previous company, and I was so eager to please them that
+I told them we could finish the project within 2 weeks. I thought this was doable, but it ended up taking three weeks and
+they were not happy. Looking back, I realized I should have been more conservative in my estimate to the client. I realized
+ that a client isn’t going to be upset if you’re clear about the timeline in advance, but they are going to be disappointed
+if you promise something and then don’t deliver. So I took this experience and used it to become much better at managing
+the expectations of clients during projects I oversee. For example, on the next project with a different client,
+I told them it’d take four weeks and we finished in three. They were very happy about this
+"""
 
 # ********** AMAZON LEADERSHIP PRINICIPLES QUESTION ** *****************
 # Tell me about yourself.
 # Tell me about current company(team) and your role in it
 # What are you looking for in next company
 # Why do you want to leave your currrent company
+"""
+Honestly, I had the opportunity to work with the most amazing team and colleagues possible.
+Not only did they treat me like an equal despite being a fresher, but they also helped me learn and guided me whenever I required a little help.
+But after working there for 3 years now, I am looking forward to a fresh set of challenges and the job profile offered by you seems perfect.
+It would help me to push my limits and get out of my comfort zone and I am sure I will be able to add value to the team as well.
+
+
+"""
 # Amazon Leadership Principles
-# Tell me an area where you think you can improve.
-# Tell me a time when you created an innovative product
-# Give me an example of when you took a risk and it failed.
-# Walk us through a time when you helped a customer through a difficult process and what that looked like.
-# Tell me about a time when had conflict with your manager/team member.
-# Tell me about a time when you could have stopped working but persisted.
+# Tell me an area where you think you can improve. -- deploymenent, communication 
+# Tell me a time when you created an innovative product -- voting system
+# Tell me about a time when you took a creative approach to solving a problem. -- solved ball sort puzzle with less compleixty
+# Give me an example of when you took a risk and it failed. (hiring new joiner)
+# Walk us through a time when you helped a customer through a difficult process and what that looked like. -- NA
+# Tell me about a time when had conflict with your manager/team member. 
+# Tell me about a time when you could have stopped working but persisted. -- after amazon rejection i continued coding
 # Tell me about a time when you received critical feedback from someone.
-# Tell me about a time when you had to deal with a poor performer on your team.
-# Tell me about a time where you overcame an obstacle and delivered results.
-# Tell me about one of your failures/mistakes.
-# How do you prioritize different tasks coming to the team?
-# Tell me about a time when you brought a change by asking questions
-# Tell me a time when you had a conflict with the product team over some requirement and how did you handle it -- start vote
+# Tell me about a time when you had to deal with a poor performer on your team. -- new hire 
+# Tell me about a time where you overcame an obstacle and delivered results. -- murder chat game not found issue
+# Tell me about one of your failures/mistakes. -- hackathone focused more on quantity and impractile project
+# How do you prioritize different tasks coming to the team? -- customer centic projects first , then hig priority project with tight deadlines , the other minor tasks
+# Tell me about a time when you brought a change by asking questions -- pdf
+# Tell me a time when you had a conflict with the product team over some requirement and how did you handle it -- start vote (50% thing)
 # Tell me about a time when you had to work out of your comfort zone  -- game not found issue
-# Tell about any project you did in which you have used new technology that was not known to you. So,
+# Tell about any project you did in which you have used new technology that was not known to you. So, (bombay play joining golang)
 # this question basically talks about Amazon’s Leadership Principles: Dive Deep, Learn and be Curious  -- amazon dynamo db
 # Have You Faced Any Tight Deadline How Did You Handled It -- ISBR
 # The time when you received negative feedback from your manager -- Be Responsive -- give regural update -- i was just buzy at completing my work
@@ -79,8 +115,8 @@
 # How to answer in Amazon behavior interview
 # 5 most asked question during the interview
 # How to answer Amazon Interview Question: Tell me about a time you failed
-# Tell me about your strengths. What is your greatest weakness?
-# What’s the most innovative new idea that you have implemented?
+# Tell me about your strengths. What is your greatest weakness? motivated and attention to details , love to develop things from sctratch
+# What’s the most innovative new idea that you have implemented? -- may be games with randomization with least complexity
 # How To Answer Ownership Principle Questions During The Amazon Interview
 # Answering Amazon Interview Question: Do you collaborate well? (team communication & negotiation)
 
@@ -114,7 +150,7 @@
 # What are indexing?
 # Tell me how you learn a new technology?
 # Time when you didn’t meet a deadline?
-# Tell me a time you took some on some risk?
+# Tell me a time you took some on some risk?  switching from frontend to backend developer is a quit risky on startups
 # https://leetcode.com/discuss/interview-question/437082/Amazon-Behavioral-questions-or-Leadership-Principles-or-LP
 
 # https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/         --done
@@ -158,7 +194,6 @@
 
 
 # other
-import collections
 a = Solution()
 
 # OrderedDict :  When you iterate over an OrderedDict object, items are traversed in the original order .
@@ -233,3 +268,17 @@ Which was the most difficult interview round and why?
 Did you solve all the questions in all the rounds?
 Given the fact that your current company is also good, why are switching the company at such an early stage of your career? (Reason for asking this was because it had only been two months since I had started my first job)
 What were the mistakes that you have committed in your current job and what did you learn from it?
+
+
+# TODO List
+# He asked me about different types of hashing. He then asked me an alternative and a better way for Linear Chaining.
+# Implement AVL Tree. https://practice.geeksforgeeks.org/problems/avl-tree-deletion/1
+# Minimum number of squares whose sum equals to given number n. https://practice.geeksforgeeks.org/problems/get-minimum-squares0538/1
+# Insertion sort for a singly linked list.https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/
+
+
+Paging / Virtual Memory
+CPU Scheduling Algo
+Deadlock / Semaphore / Critical Section
+Working of OSI Layers(CN)
+What happens if I type ‘google.com’ as URL. Explain the whole process.
