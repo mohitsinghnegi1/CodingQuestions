@@ -122,6 +122,8 @@ It would help me to push my limits and get out of my comfort zone and I am sure 
 # Tell me about a time you helped someone.   -- shubham
 # Tell me about a time you faced a group conflict.  -- voting to start game
 # When was the time you faced a failure and what did you do to overcome it? -- hackathone microsoft
+# Tell me a time when you had a conflict with the product team over some requirement and how did you handle it -- vote denominator
+# Tell me about a time when you had to work out of your comfort zone
 
 # Paging / Virtual Memory
 # CPU Scheduling Algorithm
