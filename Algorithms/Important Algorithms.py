@@ -42,7 +42,7 @@ import collections
 seemed to have a lot of potential but also had some “red flags” or things that worried me. It ended up being a big mistake.
 They had a poor attitude and dragged the team down until my CEO had to fire them. I learned to be more careful
 and not rush my decisions and to speak with others on my team who have more experience if I’m unsure of something.
-    I also realized how important each hiring decision is , which made me a better manager in the last few years of my career.
+    I also realized how important each hiring decision is, which made me a better manager in the last few years of my career.
     Since then, I’ve hired eight new people and never had a bad experience like this again. But it was a great lesson to learn
     early in my career.
 # The time when measuring customer experience -- user feedback
@@ -123,7 +123,7 @@ It would help me to push my limits and get out of my comfort zone and I am sure 
 # Tell me about a time you faced a group conflict.  -- voting to start game
 # When was the time you faced a failure and what did you do to overcome it? -- hackathone microsoft
 # Tell me a time when you had a conflict with the product team over some requirement and how did you handle it -- vote denominator
-# Tell me about a time when you had to work out of your comfort zone
+# Tell me about a time when you had to work out of your comfort zone -- new game switch
 
 # Paging / Virtual Memory
 # CPU Scheduling Algorithm
@@ -287,3 +287,17 @@ CPU Scheduling Algo
 Deadlock / Semaphore / Critical Section
 Working of OSI Layers(CN)
 What happens if I type ‘google.com’ as URL. Explain the whole process.
+
+
+# Modular properties
+# The most obvious definition is: mod(x,y) or x % y gives the remainder when you divide x by y.
+# Technique used by many a programmer to work out mod(x,y) when a mod function isn't available i.e. mod(x,y)= x-(y*int(x/y))
+# Basics ->Khan Academy
+# 1. Addition property : (A + B) mod C = (A mod C + B mod C)mod C
+# 2. Mod of a -ve number : (-A) mod C = (-A + C)mod C
+# 2. Multiplication property of modular arithmetic:
+# (A * B) mod C = (A mod C * B mod C) mod C
+# 3. Exponentiation property: A^B mod C = ( (A mod C)^B ) mod C
+
+
+
