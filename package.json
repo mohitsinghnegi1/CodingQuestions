@@ -1,0 +1,32 @@
+{
+  "name": "codingquestions",
+  "version": "1.0.0",
+  "description": "constains study material for software engineer role",
+  "main": "nodejs.js",
+  "dependencies": {
+    "ts-node": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitsinghnegi1/CodingQuestions.git"
+  },
+  "keywords": [
+    "SDE",
+    "Coding",
+    "Problem",
+    "Solving",
+    "DSA",
+    "Design",
+    "Pattern"
+  ],
+  "author": "Mohit Singh Negi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohitsinghnegi1/CodingQuestions/issues"
+  },
+  "homepage": "https://github.com/mohitsinghnegi1/CodingQuestions#readme"
+}
