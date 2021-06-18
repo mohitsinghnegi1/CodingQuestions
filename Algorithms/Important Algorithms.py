@@ -42,7 +42,7 @@ import collections
 seemed to have a lot of potential but also had some “red flags” or things that worried me. It ended up being a big mistake.
 They had a poor attitude and dragged the team down until my CEO had to fire them. I learned to be more careful
 and not rush my decisions and to speak with others on my team who have more experience if I’m unsure of something.
-    I also realized how important each hiring decision is, which made me a better manager in the last few years of my career.
+    I also realized how important each hiring decision is , which made me a better manager in the last few years of my career.
     Since then, I’ve hired eight new people and never had a bad experience like this again. But it was a great lesson to learn
     early in my career.
 # The time when measuring customer experience -- user feedback
@@ -300,4 +300,21 @@ What happens if I type ‘google.com’ as URL. Explain the whole process.
 # 3. Exponentiation property: A^B mod C = ( (A mod C)^B ) mod C
 
 
-
+# 1. 0/1 Knapsack problem
+# 2. Longest increasing/decreasing subsequence problem
+# 3. Largest hill problem problem
+# 4. Coin change problem
+# 5. Rod cutting problem
+# 6. Count ways to reach Nth floor
+# 7. Longest common subsequence problem
+# 8. Longest palindromic substring
+# 9. Longest palindromic subsequence
+# 10. Largest square/rectangle of all 1's
+# 11. Ways to traverse a 2D matrix from (1,1) to (N, N) with defined moves and their variations
+# 12. Ugly number
+# 13. Independent set problem
+# 14. Box stacking problem
+# 15. Buy, sell stocks, and it's all variations
+# 16. Tapping rainwater problem
+# 17. Edit distance problem
+# 18. Egg dropping problem
