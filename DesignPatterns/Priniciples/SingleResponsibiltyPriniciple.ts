@@ -1,0 +1,1 @@
+// One class should do only one task
