@@ -318,3 +318,22 @@ What happens if I type ‘google.com’ as URL. Explain the whole process.
 # 16. Tapping rainwater problem
 # 17. Edit distance problem
 # 18. Egg dropping problem
+
+
+# Robot Bounded in Box
+# Number Game
+# Find All Combination of Numbers Sum to Target / Shopping Options
+# Fill the Truck
+# Music Pairs
+# Slowest key
+# Five Star Seller
+# Split String Into Unique Primes
+# Storage Optimization
+# Minimum Difficulty of a Job Schedule
+# Autoscale Policy, Utilization Check
+# Optimal Utilization
+# Merge Two Sorted Lists
+# Two Sum Unique Pairs
+# Shopping Patterns
+# Reorder Data in Log Files
+# Top K Frequent Words
