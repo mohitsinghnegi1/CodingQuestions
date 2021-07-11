@@ -53,3 +53,44 @@ class MedianFinder(object):
 # obj = MedianFinder()
 # obj.addNum(num)
 # param_2 = obj.findMedian()
+
+
+# // light version
+
+
+class MedianFinder(object):
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.heaps = [], []
+
+    def addNum(self, num):
+        """
+        :type num: int
+        :rtype: None
+        """
+        small, large = self.heaps
+
+        heappush(large, -heappushpop(small, -num))
+
+        if(len(small) <= len(large)):
+            heappush(small, -heappushpop(large, num))
+
+    def findMedian(self):
+        """
+        :rtype: float
+        """
+        small, large = self.heaps
+
+        if(len(small) != len(large)):
+            return -small[0]
+
+        return (-small[0]+large[0])/2.0
+
+
+# Your MedianFinder object will be instantiated and called as such:
+# obj = MedianFinder()
+# obj.addNum(num)
+# param_2 = obj.findMedian()
