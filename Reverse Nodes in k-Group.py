@@ -138,3 +138,62 @@ class Solution(object):
 
         # keep track of count so that we don't reverse the last remaining part
         return reverse(head, count, k)
+
+
+#  Easiest way using pure recursion -> with my thought
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+def reverse(head):
+
+    if(head.next == None):
+        return head
+
+    newHead = reverse(head.next)
+    head.next.next = head
+
+    return newHead
+
+
+class Solution(object):
+    def reverseKGroup(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: ListNode
+        """
+
+        """
+        Intution : first reverse the last slot return reversed head
+        2. then reverse the current slot of k node as new Head
+        3. set the current head = reverseHead 
+        return new head
+        In case there is no enough nodes return head
+        
+        How to approach 
+        crete a linked list of 7 nodes assume k as 2 then try to do above algo
+        """
+
+        count = 0
+        prev = None
+        next1 = head
+        while(next1 != None and count < k):
+            count += 1
+            prev = next1
+            next1 = next1.next
+
+        if(count < k):
+            return head
+
+        revHead = self.reverseKGroup(next1, k)
+
+        # reverse the cur par ,
+        prev.next = None
+
+        newHead = reverse(head)
+        head.next = revHead
+
+        return newHead
