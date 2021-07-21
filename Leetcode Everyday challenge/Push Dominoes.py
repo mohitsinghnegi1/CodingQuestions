@@ -50,3 +50,49 @@ class Solution(object):
                 str1 += 'R'
 
         return str1
+
+
+# slight modification instead of expensive divide operation i am uisng -+ operation
+
+
+class Solution(object):
+    def pushDominoes(self, dominoes):
+        """
+        :type dominoes: str
+        :rtype: str
+        """
+        # calculate force
+
+        n = len(dominoes)
+
+        force = [0]*(n)
+        f = 0
+        for i in range(n):
+            if dominoes[i] == 'R':
+                f = n
+            elif(dominoes[i] == 'L'):
+                f = 0
+            else:
+                f = max(f-1, 0)
+            force[i] += f
+        # print force
+        f = 0
+        for i in range(n-1, -1, -1):
+            if dominoes[i] == 'L':
+                f = n
+            elif(dominoes[i] == 'R'):
+                f = 0
+            else:
+                f = max(f-1, 0)
+            force[i] -= f
+        # print force
+
+        ans = ""
+        for f in force:
+            if(f == 0):
+                ans += "."
+            elif(f > 0):
+                ans += "R"
+            else:
+                ans += "L"
+        return ans
