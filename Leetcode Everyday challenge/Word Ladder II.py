@@ -1,6 +1,7 @@
 # QUs:https://leetcode.com/explore/challenge/card/july-leetcoding-challenge-2021/611/week-4-july-22nd-july-28th/3825/
 
 # time complexity TLE
+from collections import deque
 import sys
 
 
@@ -53,7 +54,6 @@ class Solution(object):
         :type wordList: List[str]
         :rtype: List[List[str]]
         """
-       
 
         if(endWord not in wordList):
             return []
@@ -82,31 +82,28 @@ class Solution(object):
         return output
 
 
-# solve efficiently 
+# solve efficiently
 # https://www.youtube.com/watch?v=SEmKCXfVqGU
-import sys
-from collections import deque
 
 # return array of next word( ith char diff)
-def getNextWord(beginWord,j,nextWordArr,wordList):
+def getNextWord(beginWord, j, nextWordArr, wordList):
 
-    for i in range(ord('a'),ord('z')+1):
+    for i in range(ord('a'), ord('z')+1):
         word = beginWord[:j]+chr(i)+beginWord[j+1:]
         # print word
-        if(word in wordList and word!=beginWord):
+        if(word in wordList and word != beginWord):
             nextWordArr.append(word)
         # print nextWordArr
-        
-        
-def getNeighbour(beginWord,wordList):
+
+
+def getNeighbour(beginWord, wordList):
     nextWordArr = []
     # print beginWord , "===> "
     for i in range(len(beginWord)):
         # find all the possible next words
-        
-        getNextWord(beginWord,i,nextWordArr,wordList) 
+
+        getNextWord(beginWord, i, nextWordArr, wordList)
     return nextWordArr
-        
 
 
 class Solution(object):
@@ -127,45 +124,33 @@ class Solution(object):
         if(endWord not in wordList):
             return []
         seq = [beginWord]
-        queue = deque([(beginWord,seq,set([beginWord]))])
+        queue = deque([(beginWord, seq, set([beginWord]))])
         par = {}
         par[beginWord] = None
         flag = True
-        
+
         res = []
-        
+
         while(queue):
-            bw,seq,v = queue.popleft()
-            
-            if(bw==endWord):
-                if(res==[] or len(res[0])==len(seq)):
+            bw, seq, v = queue.popleft()
+
+            if(bw == endWord):
+                if(res == [] or len(res[0]) == len(seq)):
                     res.append(seq)
-               
-            if(len(res)!=0 and len(seq)>=len(res[0])):
+
+            if(len(res) != 0 and len(seq) >= len(res[0])):
                 continue
-            
-            wordList.discard(bw) # to reduce complexity
-            neis = getNeighbour(bw,wordList)
+
+            wordList.discard(bw)  # to reduce complexity
+            neis = getNeighbour(bw, wordList)
             # print neis
 
             for nei in neis:
 
                 if(nei not in v):
                     par[nei] = bw
-                    vnew = v.copy() 
+                    vnew = v.copy()
                     vnew.add(nei)
-                    queue.append((nei,seq+[nei],vnew))
-            
-        
-        
+                    queue.append((nei, seq+[nei], vnew))
+
         return res
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
