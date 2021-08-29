@@ -7,11 +7,14 @@ class Solution(object):
         :type nums: List[int]
         :type n: int
         :rtype: int
+
+        increase reach max  by added elment time we add element to output list
+        if element we need to add in output is already in list then patch count will
+        not increase outher wise we will increase patch count - let say 9 is the second 
+        number in list and out max patch is 7 then 8 will be added to out list
         """
-        # increase reach max  by added elment time we add element to output list
-        # if element we need to add in output is already in list then patch count will
-        # not increase outher wise we will increase patch count - let say 9 is the second 
-        # number in list and out max patch is 7 then 8 will be added to out list
+
+        
         
         
         max_range = 0
