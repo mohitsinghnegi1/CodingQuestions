@@ -155,3 +155,6 @@ class Solution(object):
                 max_so_far  = max(count,max_so_far)
             
         return max_so_far
+
+
+# we can further optimise space using the array itself
