@@ -1,5 +1,8 @@
 # Qus:https://leetcode.com/problems/first-missing-positive/
 
+# time complexity O(n)
+# space complexity O(1)
+
 import sys
 class Solution(object):
     def firstMissingPositive(self, nums):
@@ -12,6 +15,7 @@ class Solution(object):
             
             number <= 0 and number > len(nums) can't be a soltuion . why? 
             Hint : we need to find the first smallest <POSITIVE> number 
+            to mark if element present or not we will change the sign to -ve at index value - 1
             
             
             Algo:
