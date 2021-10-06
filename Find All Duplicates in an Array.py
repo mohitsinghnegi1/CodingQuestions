@@ -33,3 +33,27 @@ class Solution(object):
                 swap(i, nums[i])
 
         return list(set(out))
+
+# easy to understand approach 
+# mark as negative which are visited
+class Solution(object):
+    def findDuplicates(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        
+        
+        ans = []
+        
+        
+        for i in range(len(nums)):
+            
+            num = abs(nums[i])
+            
+            if(nums[num-1]<0):
+                ans.append(num)
+            
+            else:
+                nums[num-1] = -abs(nums[num-1])
+        return ans
