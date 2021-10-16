@@ -75,3 +75,47 @@ class Solution(object):
         # you may not engage in multiple transactions
         d= {}
         return maxProfitUtil(prices,i,k,lastBuy,d)
+
+
+# using prefixProfit and suffixProfit array
+# time complexity O(n**2)
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        
+        n = len(prices)
+        
+        # 0..i,   i+1...n-1
+        
+        prefixPft = [0]*n
+        suffixPft = [0]*n
+        
+        min1 = prices[0]
+        
+        for i in range(1,n):
+            prefixPft[i] = max(prefixPft[i-1],prices[i]-min1)
+            min1 = min(min1,prices[i])
+            
+        max1 =  prices[-1]  
+        for i in range(n-2,-1,-1):
+            suffixPft[i] = max(suffixPft[i+1],max1 - prices[i])
+            max1 = max(max1,prices[i])
+        
+        maxProfit = 0
+        
+        
+        for i in range(n+1):
+            
+            p1 = suffixPft[i] if i<n else 0
+            p2 = prefixPft[i-1] if i-1>=0 else 0
+            
+            maxProfit = max(maxProfit,p1+p2)
+        
+        
+        return maxProfit
+        
+        
+        
