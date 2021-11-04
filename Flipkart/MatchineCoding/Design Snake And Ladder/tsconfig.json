@@ -23,6 +23,6 @@
         "build",
         "settings",
         "buildtest",
-        "test"
+       
     ]
   }
