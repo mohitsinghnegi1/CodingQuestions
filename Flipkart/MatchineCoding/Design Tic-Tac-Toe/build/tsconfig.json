@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "lib": ["dom", "es6"],
+        "outDir": "build",
+        "module": "commonjs",
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "sourceMap": true
+    },
+    "include": [
+        "**/**/*.ts",
+        "**/**/*.json"
+    ],
+    "exclude": [
+        "node_modules",
+        "library",
+        "local",
+        "temp",
+        "build",
+        "settings",
+        "buildtest",
+    ]
+}
