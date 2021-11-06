@@ -16,19 +16,19 @@ class Graph(object):
     def printGraph(self):
         
         for i in self.graph:
-            print i," => ",self.graph[i]
+            print(i," => ",self.graph[i])
             
             
     def dfs(self,root):
         
-        print 'DFS'
+        # print 'DFS'
 
         stack=[]
         visited=[root]
         stack.append(root)
         while(stack):
             node=stack.pop()
-            print node,
+            # print node,
             for i in self.graph[node]:
                 if(i not in visited):
                     stack.append(i)
@@ -37,13 +37,13 @@ class Graph(object):
         
     
     def bfs(self,root):
-        print 'BFS'
+        # print 'BFS'
         queue=[]
         visited=[root]
         queue.append(root)
         while queue:
             node=queue.pop(0)
-            print node,
+            # print node,
             for i in self.graph[node]:
                 if(i not in visited):
                     queue.append(i)

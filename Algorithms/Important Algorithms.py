@@ -38,13 +38,13 @@
 # The time when you fail commitment.--for example - commitment to give 2-3 h dailty to coding
 
 import collections
-- In my last job, our CEO gave me a chance to interview and hire entry-level people for our team. I chose to hire someone who
-seemed to have a lot of potential but also had some “red flags” or things that worried me. It ended up being a big mistake.
-They had a poor attitude and dragged the team down until my CEO had to fire them. I learned to be more careful
-and not rush my decisions and to speak with others on my team who have more experience if I’m unsure of something.
-    I also realized how important each hiring decision is , which made me a better manager in the last few years of my career.
-    Since then, I’ve hired eight new people and never had a bad experience like this again. But it was a great lesson to learn
-    early in my career.
+# - In my last job, our CEO gave me a chance to interview and hire entry-level people for our team. I chose to hire someone who
+# seemed to have a lot of potential but also had some “red flags” or things that worried me. It ended up being a big mistake.
+# They had a poor attitude and dragged the team down until my CEO had to fire them. I learned to be more careful
+# and not rush my decisions and to speak with others on my team who have more experience if I’m unsure of something.
+#     I also realized how important each hiring decision is , which made me a better manager in the last few years of my career.
+#     Since then, I’ve hired eight new people and never had a bad experience like this again. But it was a great lesson to learn
+#     early in my career.
 # The time when measuring customer experience -- user feedback
 # The time when you got bad feedback from your manager -- about mail of work done
 # The time when you help a teammate -- new joiner Shaurya, Guru, Surbhi in leadsquared
@@ -60,11 +60,11 @@ and not rush my decisions and to speak with others on my team who have more expe
 
 # Failed to meet the deadlines
 """n college I had two essays due within a couple days of each other. I mentally switched the due dates for them in my head,
- so while I submitted one early, the other one was submitted a day late. It was a silly mistake on my end. I talked to the 
- professor about the situation, and while I was marked down a few points, I still managed to get a "B" on the assignment. 
- The professor recommended that I start keeping track of all assignments in detail in either a journal or on my phone so 
- that something like this would not happen again. I maintained such records throughout 
-the rest of my academic career and never submitted something late again, and that habit has since come in handy in the workforce.
+    so while I submitted one early, the other one was submitted a day late. It was a silly mistake on my end. I talked to the 
+    professor about the situation, and while I was marked down a few points, I still managed to get a "B" on the assignment. 
+    The professor recommended that I start keeping track of all assignments in detail in either a journal or on my phone so 
+    that something like this would not happen again. I maintained such records throughout 
+    the rest of my academic career and never submitted something late again, and that habit has since come in handy in the workforce.
 """
 
 # Example Answers to “Tell Me a Time When You Failed”
@@ -204,8 +204,8 @@ a = Solution()
 # OrderedDict :  When you iterate over an OrderedDict object, items are traversed in the original order .
 # If you update the value of an existing key, then the order remains unchanged.
 # delete item from the end if not passed it will by default pop from the begining like a queue
-- methods: popitem(last=True)  # i is small
-- method: move_to_end(key, last=True)
+# - methods: popitem(last=True)  # i is small
+# - method: move_to_end(key, last=True)
 # TIme complexity O(1)
 # initializing deque
 de = collections.deque([1, 2, 3])
@@ -225,7 +225,7 @@ de.popleft()
 # to delete an eleemnt in the middle use del dequeu[index] or deq.remove(item)  time complexity is O(n)
 
 
-TODO: Just seen
+# TODO: Just seen
 # https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/
 # - sort the Array , fix first use j as i+1  and k as n-1  use while(j<k) and see if condition matches using two pointer
 # - https://practice.geeksforgeeks.org/problems/merge-sort-on-doubly-linked-list/1
@@ -254,13 +254,13 @@ TODO: Just seen
 # https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed  ---- patterns
 
 
-New Operating system questions
-Detailed explanation of need and working of Virtual Memory in Operating System
-Overview of pages and page faults
+# New Operating system questions
+# Detailed explanation of need and working of Virtual Memory in Operating System
+# Overview of pages and page faults
 
 
-HR:
-Why Amazon?
+# HR:
+# Why Amazon?
 
 # - 1. Tier 3 college, aspiration to get into Amazon, and be on the top don't want to be an average person,last time i gave interview
 # but unfortunately i was not able to clear it, since then i was practicing deaily coding questions, improving the mistaks that i did last time
@@ -269,10 +269,10 @@ Why Amazon?
 # end to end lifecycle of large scaled projects at amazon
 
 
-Which was the most difficult interview round and why?
-Did you solve all the questions in all the rounds?
-Given the fact that your current company is also good, why are switching the company at such an early stage of your career? (Reason for asking this was because it had only been two months since I had started my first job)
-What were the mistakes that you have committed in your current job and what did you learn from it?
+# Which was the most difficult interview round and why?
+# Did you solve all the questions in all the rounds?
+# Given the fact that your current company is also good, why are switching the company at such an early stage of your career? (Reason for asking this was because it had only been two months since I had started my first job)
+# What were the mistakes that you have committed in your current job and what did you learn from it?
 
 
 # TODO List
@@ -282,11 +282,11 @@ What were the mistakes that you have committed in your current job and what did 
 # Insertion sort for a singly linked list.https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/
 
 
-Paging / Virtual Memory
-CPU Scheduling Algo
-Deadlock / Semaphore / Critical Section
-Working of OSI Layers(CN)
-What happens if I type ‘google.com’ as URL. Explain the whole process.
+# Paging / Virtual Memory
+# CPU Scheduling Algo
+# Deadlock / Semaphore / Critical Section
+# Working of OSI Layers(CN)
+# What happens if I type ‘google.com’ as URL. Explain the whole process.
 
 
 # Modular properties
