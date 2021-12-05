@@ -62,6 +62,9 @@ Some behavioral questions.
 He also asked me how is the interview process in flipkart and if I had any suggestions to improve the interview process.
 
 
+https://workat.tech/general/article/sde-1-interview-prep-ultimate-guide-dhijqvdubzor
+
+
 
 
 

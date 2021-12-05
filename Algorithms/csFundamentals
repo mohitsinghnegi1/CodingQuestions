@@ -108,3 +108,9 @@ https://www.youtube.com/watch?v=_b5dBF-Kyk4
 
 DBMS Crash course 
 https://www.youtube.com/watch?v=-WEpWH1NHGU
+
+
+
+# there is different ways to detect a cycle in a graph for directed and undirected sing union find and dfs
+# union find for undirected graph assumes no parral edges
+

@@ -1,5 +1,6 @@
 # Qus:https://leetcode.com/problems/count-of-smaller-numbers-after-self/
-
+# bisect gives the position of eleemnt to be inserted in the list. bisect left gives the equal or position to be inserted
+# on the other hand bisect right gives the position to be inserted on the right side of the element.
 
 import bisect
 

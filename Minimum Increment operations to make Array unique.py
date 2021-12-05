@@ -2,7 +2,8 @@
 
 """
 
-Intution : if the count of some 
+Intution : if the count of some number is greater then 2 that means we need to assign some number which is greater that number and the number should have freq 0.
+
 
 
 """
