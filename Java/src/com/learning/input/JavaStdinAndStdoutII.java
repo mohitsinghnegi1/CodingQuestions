@@ -1,4 +1,4 @@
-// Qus:https://www.hackerrank.com/challenges/java-stdin-stdout/problem?h_r=next-challenge&h_v=zen
+package com.learning.input;// Qus:https://www.hackerrank.com/challenges/java-stdin-stdout/problem?h_r=next-challenge&h_v=zen
 
 
 import java.util.Scanner;
