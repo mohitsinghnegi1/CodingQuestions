@@ -116,3 +116,134 @@ for i in range(q):
 
 
 # print segTree
+
+
+
+
+
+# 2nd solution (16 April 2022)
+
+import sys
+
+def query(st,l,r,ql,qr,si=0):
+
+
+    # three cases
+    # 1. complete overlap --> return val of node
+    # 2. partial overlap -->
+            # In case st node completly lies within a range then it will contibute to the ans
+            # In case st node does not lies inside then return vsal which could never be the ans
+            # In case of partial overlap(left or bitween or right) move in both direction
+
+
+    # 3. no overlap --> just return  -sys.maxsize
+
+    # complete overlap
+    if(ql<=l and r<=qr):
+        return st[si]
+
+
+    # no overlap
+    if(r<ql or qr<l):
+        return -sys.maxsize
+
+
+    # partial overlap
+    # move in both direction
+    mid = (l+r)/2
+    maxleft = query(st,l,mid,ql,qr,2*si+1)
+    maxright = query(st,mid+1,r,ql,qr,2*si+2)
+
+
+    return max(maxleft,maxright)
+
+
+def update(st,d,x,y):
+
+    psi = d[x] # get the segement tree index
+
+    st[psi] = y # update by new value
+
+
+    while(psi!=0):
+
+        psi = (psi-1)/2
+
+        # update the value of si
+        st[psi] = max(st[2*psi+1],st[2*psi+2])
+
+
+
+class Solution(object):
+    def maxSlidingWindow(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+
+        si = index of segment tree
+        range l,r = range of which this index stores the ans
+
+        """
+
+
+
+
+        n = len(nums)
+        d = {}
+
+        st = [0]*(4*n)
+
+        def bildSegmentTree(l,r,si=0):
+
+            if(l==r):
+                # base case where range is l,l
+                st[si] = nums[l]
+                d[l] = si
+                return st[si]
+
+            # we need to find the max within a range
+            mid = (l+r)/2
+            leftmax = bildSegmentTree(l,mid,2*si+1)
+            rightmax = bildSegmentTree(mid+1,r,2*si+2)
+
+            st[si] = max(leftmax,rightmax)
+
+            return st[si]
+
+
+
+
+        bildSegmentTree(0,n-1)
+
+        # print query(st,0,n-1,2,4)
+
+
+        # print st # st has been buit
+
+
+        out = []
+
+
+        for i in range(n-k+1):
+            out.append(query(st,0,n-1,i,i+k-1))
+
+
+
+        # below code is for update (Not part of this question)
+        # update(st,d,2,10) # uncomment this line to see this logic in action
+
+        print st
+
+
+
+        return out
+
+
+
+
+
+
+
+
+
