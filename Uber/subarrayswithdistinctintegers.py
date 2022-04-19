@@ -1,6 +1,6 @@
 from collections import defaultdict
 # https://www.interviewbit.com/problems/subarrays-with-distinct-integers/
-# rat loo isko , two pointer when we need to find what is the possible subset having at max 4 unique or sum less then someting
+# rat loo isko , two pointer when we need to find what is the possible subset having at max 4 unique or sum less then someting - used in subarray
 def countSubarrayWithMaxNunique(n,A):
 
     length = len(A)
