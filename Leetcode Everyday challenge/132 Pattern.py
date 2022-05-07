@@ -1,4 +1,6 @@
 import sys
+# https://leetcode.com/problems/132-pattern/
+# time complexity O(2*n)
 class Solution(object):
     def find132pattern(self, nums):
         """
