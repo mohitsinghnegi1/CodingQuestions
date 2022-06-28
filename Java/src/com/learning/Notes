@@ -1,0 +1,26 @@
+Java 1.8
+-> Lambda
+-> Stream APIs
+-> Default & Static method in interface
+
+Interfaces
+-> Default method (Java 1.8)
+-> Static Method (Java 1.8) , can be called like Interface.StaticMethod
+-> Due to default method, can lead to diamond problem (same method in implemented interfaces) , to avoid must override
+    default interface method
+-> Class precedence > Interface precedence , so if a extended class and implemented interface have same method then
+    class method will be called
+-> We can not create default method of Object class
+
+Stream API
+-> 2 type stream , parallelStream()  (multiple core )
+-> stream functions two type : intermediate (filter map) , termination (findFirst.orElse(), reduce(0, (x,y)->x+y))
+-> uses internal iteration instead of external iteration
+
+
+Predicate
+-> take 1 vale return boolean [rem using filter]
+
+Consumer
+-> take value returns nothing
+

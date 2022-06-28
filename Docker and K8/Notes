@@ -1,0 +1,31 @@
+Docker
+
+commands
+1. docker container run -d alpine:latest # imageName = alpine - to run container
+2. systemctl start docker # to start docker
+3. systemctl stop docker # to stop docker
+4. systemctl status docker # to see status of docker
+5. docker help # categorization of docker commands
+6. docker image pull # by default pull from docker registry but we can mention private registry name [docker image pull <private-registry>:<Port> ]
+7 docker image ls # list the images
+8. sudo docker container create --name test1 -i -t alpine sh # create container with given name with alpine
+9. sudo docker container start test1 # start a container
+10. sudo docker container run -i -t --name myalpine1 alpine sh # run container with a command sh
+11 sudo docker container logs test2
+12 sudo docker container stop test2 # stop a running container
+13 sudo docker container ls -a # list all container
+14 sudo docker container pause test2 # pause a container
+15 sudo docker container unpause test2 #unpause
+16 sudo docker container rename test2 while_loop_container # rename a container
+17 sudo docker container rm while_loop_container # rm a container if it is already stopped
+18 sudo docker container rm -f myalpine # forcefully remove it without stopping
+19 sudo docker container run --rm --name container_with_rm alpine ping -c 3 google.com  # remove a container after exit
+20 sudo docker container run -h alpine -it --rm alpine sh # set a hostname to container
+21 sudo docker container run -it --env "WEB_HOST=172.168.1.1" --rm alpine sh # set env variable
+22 docker inspect <container name> # so see container details
+23 docker exec -it myubuntu bash # go inside a container
+24 docker container prune # With docker container prune command we can remove all the stopped containers.
+25 sudo docker container cp index.html web2:/usr/share/nginx/html/ # copy from host to running container
+
+
+26 docker image inspect alpine | less

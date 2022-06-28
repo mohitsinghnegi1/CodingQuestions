@@ -3,12 +3,77 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/Docker and K8/Notes">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Java/src/com/learning/ArrayListOperations/ArrayListOperations.java">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Java/src/com/learning/Notes">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Java/src/com/learning/map/HashMap/HashMap1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Leetcode Everyday challenge/Maximal Network Rank.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Leetcode Everyday challenge/Minimum Deletions to Make Character Frequencies Unique.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/darwin-client/src/main/java/fk/sp/sa/mapi/darwinclient/DarwinClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/darwin-client/src/main/java/fk/sp/sa/mapi/darwinclient/config/DarwinConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/darwin-client/src/main/java/fk/sp/sa/mapi/darwinclient/internal/HystrixDarwinClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/darwin-client/src/main/java/fk/sp/sa/mapi/darwinclient/v2/internal/FetchSellerFinalTierV2Command.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/darwin-client/src/main/java/fk/sp/sa/mapi/darwinclient/v2/models/SellerFinalTierV2Response.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/k8s/fk-sp-sa-mapi/config/preprod/local.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/seller-mobile/src/main/java/fk/sp/sa/mapi/sellermobile/ListingResource.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/seller-mobile/src/main/java/fk/sp/sa/mapi/sellermobile/internal/facade/dashboard/BannersConfigHelper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../flipkart/seller-app-new-2/seller-mobile-api/seller-mobile/src/main/java/fk/sp/sa/mapi/sellermobile/internal/services/CommissionCalculatorService.java">
           <value>
             <set />
           </value>
