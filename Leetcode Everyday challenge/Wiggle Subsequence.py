@@ -76,3 +76,25 @@ class Solution(object):
 
 
         return max_so_far
+
+
+# solution 2 with O(N) time complexity O(1) space complexity
+class Solution(object):
+    def wiggleMaxLength(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        up = 1 # max so far for up
+        down = 1 # max so far for down
+
+
+        for i in range(1,n):
+
+            if(nums[i]<nums[i-1]):
+                down = up + 1
+            elif(nums[i]>nums[i-1]):
+                up = down + 1
+
+        return max(up,down)
