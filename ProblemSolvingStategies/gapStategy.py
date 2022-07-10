@@ -4,7 +4,7 @@
 # dp[i][j] stores ans of string starting from index i to index j
 
 # Note : We can store ans of reverse string just dp[i][j] = d[j][j] in case of palindrome
-# for other cases we genrally not fill those but if we store those cells that means it will store ans of greate index to smaller index ans
+# for other cases we generally not fill those but if we store those cells that means it will store ans of greate index to smaller index ans
 
 # Note : Here dp[i][j] depends on dp[i+1][j-1] , hence we need to compute value of i+1 row value and col -1 value first
 # so we need to create a loop from last to first index and col index from first to last
