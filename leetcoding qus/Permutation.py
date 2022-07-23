@@ -31,3 +31,35 @@ class Solution(object):
     
         # SOl 2 
         # return list(itertools.permutations(nums,))
+
+
+# solution editorial 2
+class Solution(object):
+    def permute(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        out=[]
+        n = len(nums)
+
+        def recurse(permu,nums,n):
+
+            if(len(permu)==n):
+                out.append(permu[:])
+
+            for i in range(len(nums)):
+
+                temp = nums[:]
+                permu.append(nums[i])
+                nums = nums[:i]+nums[i+1:]
+                recurse(permu,nums,n)
+                permu.pop()
+                nums = temp
+
+
+
+
+
+        recurse([],nums,n)
+        return out
