@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dummydeployment
+  namespace: dummynamespace
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        group1: dummylabel
+    spec:
+      containers:
+      - name: dummycontainer
+        image: nginx
+        ports:
+          - containerPort: 80
+  selector:
+    matchLabels:
+      group1: dummylabel
