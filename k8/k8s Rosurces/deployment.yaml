@@ -15,6 +15,17 @@ spec:
         image: nginx
         ports:
           - containerPort: 80
+        env:
+          - name: HOST
+            value: PROD
+          - name: ENV_SECRET_VAR_KEY
+            valueFrom:
+              secretKeyRef:
+                name: dummypassword2
+                key: DUMMY_PASSWORD
+
+
+
   selector:
     matchLabels:
       group1: dummylabel
