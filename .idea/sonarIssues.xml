@@ -3,7 +3,17 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Docker and K8/Notes">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Flipkart/Redis/Notes">
           <value>
             <set />
           </value>
@@ -29,6 +39,31 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Leetcode Everyday challenge/Minimum Deletions to Make Character Frequencies Unique.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8/Setting up local kubernates environment">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8/k8s Rosurces/deployment.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8/k8s Rosurces/ingress.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8/k8s Rosurces/namespaces.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/k8/k8s Rosurces/service.yaml">
           <value>
             <set />
           </value>

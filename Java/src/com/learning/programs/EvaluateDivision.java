@@ -19,7 +19,7 @@ class Edge1{
 }
 
 
-class Solution2 {
+class Solution3ß {
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
 
 

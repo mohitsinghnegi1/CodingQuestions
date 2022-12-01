@@ -1,0 +1,49 @@
+Resource : https://www.youtube.com/watch?v=DUbEgNw-F9c
+https://www.youtube.com/watch?v=mhUQe4BKZXs&list=PLkQkbY7JNJuBoTemzQfjym0sqbOHt5fnV
+Redis is used for distributed cache
+Redis is used for rate limiting
+
+We need to set the TTL to data <--very important
+
+Feature Estimation
+1. should store Tera byte of data
+2. Scalable
+3. 100% Available
+4. ~1 ms response time
+5. 50k to 1million QPS
+6. LRU (Eviction policy)
+
+
+Patterns
+1. Write thorough - first cache -> second DB
+2. Write around - first db -> on miss update the cache
+3. write back - first write to the cache return response -> some other service will keep the db in sync
+
+Fault tolerance
+1. Snapshot on regular interval
+2. Using log file - save each event write or read into log file and retrive the log file in case of disaster
+
+Rate limit Algo
+
+1. Token bucket -for particular user if 5 req/min and user makes more then 5 req within a min then heshould get
+429 status code and if he request after a min    (might lead to race condition in case same redis server but multiple application )
+
+2. leaqy bucket (FIFO) - there is a fixed size queue and a service which process the request with some rate let say 1req/s
+In case of request burst all the request which come later after queue is filled will be overflow and once queue is empty
+the service will process the request in constant rate. this will make sure server will receive request in constant rate.
+
+3. Fixed window counter
+
+window of time  let say 10R per sec .
+Limitation : can receive 20 request per min
+
+4. Sliding log
+5. sliding window counter
+
+Drwback of all above rate limiting algorithm is race condition and inconsistency
+
+Distributed System
+1. Inconsistency
+2. Race condition
+
+but it will add 100 ms sec

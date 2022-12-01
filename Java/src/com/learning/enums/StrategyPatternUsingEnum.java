@@ -38,7 +38,7 @@ public class StrategyPatternUsingEnum {
 
         for(DataType d: EnumSet.range(DataType.BOOLEAN,DataType.STRING)){
             System.out.println(d.ordinal());
-            System.out.println(d.isValidValue(""));
+            System.out.println(d.isValidValue("sd"));
         }
     }
 }
