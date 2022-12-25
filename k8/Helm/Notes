@@ -1,0 +1,69 @@
+install helm
+1. brew install helm
+
+Lets create our first helm chart
+Good tutorial : https://www.youtube.com/watch?v=pHGc87zHLlo
+
+HELM CHART DEMO ******************************** VV IMP
+https://www.youtube.com/watch?v=2dqQcou_MCU
+
+
+To check actual value
+helm template <helmChartFolderName>
+helm template mychartName
+
+
+If you want to check if there is any problem with your chart
+helm lint <helmChartFolderName>
+
+to check error
+
+helm install <any release-name> --debug --dry-run <char folder name>
+helm install my_first_release --debug --dry-run mychartname -n <namespace>
+
+
+You can check the chart version  (You can check the flipkart char version detais release name,char etc)
+
+helm list -a
+
+NAME                    NAMESPACE               REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
+fk-sp-feedback-service  fk-sp-sa-mapi-stage     3               2022-04-11 14:52:52.829743033 +0530 IST deployed        fk-sp-feedback-service-1.0.13   1.0.13
+fk-sp-sa-mapi           fk-sp-sa-mapi-stage     1               2022-07-30 16:42:40.58519 +0530 IST     deployed        fk-sp-sa-mapi-1.3.39            1.3.39
+
+
+kubectl get all (you can run in flipkart context)
+
+
+
+If you have already deployed your helm chart and you wanted to update the helm release
+
+ie If you change your chart version
+
+
+Note : don't forget to run minikube using minikube start commad
+
+
+helm upgrade <release-name> <chart-name>
+helm upgrade myfirstrelease mychartname -n mynamespace
+
+helm list -a -n mynamespace
+
+
+Rolling back the release using helm
+
+
+helm rollback <revision number> <revision number>
+helm rollback myfirstrelease 5 -n mynamespace
+
+
+Clean up the helm releases
+first list the release
+
+helm list -a
+
+Now delete the release
+helm delete <releasename>
+
+
+
+
