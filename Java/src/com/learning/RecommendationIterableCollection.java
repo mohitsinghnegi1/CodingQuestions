@@ -4,7 +4,7 @@ import com.sun.tools.javac.util.ArrayUtils;
 import java.util.*;
 import java.lang.*;
 
-public class Recommendation {
+public class RecommendationIterableCollection {
 
 
     public static void main(String[] args) {

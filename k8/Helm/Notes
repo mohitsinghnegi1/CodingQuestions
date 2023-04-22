@@ -18,7 +18,7 @@ helm lint <helmChartFolderName>
 
 to check error
 
-helm install <any release-name> --debug --dry-run <char folder name>
+helm install <any release-name> --debug --dry-run <char folder name> -n <namespace>
 helm install my_first_release --debug --dry-run mychartname -n <namespace>
 
 
