@@ -62,6 +62,11 @@ public class LinkedListOperations {
             System.out.println(linkedList);
 
 
+            // Use it as doubly linked list
+            linkedList.listIterator().hasPrevious();
+            linkedList.listIterator(1).hasPrevious();
+            linkedList.listIterator(1).previous();
+            linkedList.listIterator(1).previousIndex();
 
         }
 

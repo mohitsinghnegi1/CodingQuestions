@@ -36,5 +36,6 @@ public class DequeOperations {
         System.out.println(dq.peekLast());
 
 
+
     }
 }

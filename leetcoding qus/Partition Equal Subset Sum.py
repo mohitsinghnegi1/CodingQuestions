@@ -166,3 +166,46 @@ class Solution4(object):
                 #     print matrix[i][j]
         print matrix
         return matrix[-1][-1]
+
+
+class Solution(object):
+    def canPartition(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+
+        totalSum = sum(nums)
+
+        if (totalSum % 2 == 1):
+            return False
+
+        d = {}
+
+        def solve(i, curSum):
+
+            if (2 * curSum == totalSum):
+                return True
+            if (2 * curSum > totalSum):
+                return False
+
+            if (i >= len(nums)):
+                return False
+
+            if (d.get((i, curSum), None) != None):
+                return d[(i, curSum)]
+
+            d[(i, curSum)] = solve(i + 1, curSum + nums[i]) or solve(i + 1, curSum)
+            return d[(i, curSum)]
+
+        return solve(0, 0)
+
+
+
+
+
+
+
+
+
+

@@ -20,7 +20,6 @@ public class CollectionClass {
         System.out.println(Collections.max(arr));
 
         System.out.println(Collections.frequency(arr,2));
-
         Collections.sort(arr, Comparator.reverseOrder());
         System.out.println(arr);
     }
