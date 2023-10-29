@@ -72,3 +72,45 @@ if(len(topological_seq) != n):
     print -1
 
 print " ".join(map(str, topological_seq))
+
+
+
+# Easy to understand using BFS/DFS only
+
+
+class Solution:
+
+    # Function to return list containing vertices in Topological order.
+    def topoSort(self, n, adj):
+        # Code here
+
+        indegree = {}
+
+        for i in range(n):
+            indegree[i] = 0
+
+        for u in range(n):
+            for v in adj[u]:
+                indegree[v] += 1
+
+        queue = []
+
+        for u in range(n):
+            if (indegree[u] == 0):
+                queue.append(u)
+
+        topo = []
+
+        while (queue):
+
+            u = queue.pop()
+
+            topo.append(u)
+
+            for v in adj[u]:
+                indegree[v] -= 1
+                if (indegree[v] == 0):
+                    queue.append(v)
+
+        return topo
+

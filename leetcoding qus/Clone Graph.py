@@ -55,3 +55,55 @@ class Solution(object):
 
         # return the reference of root node
         return visited[node]
+
+
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+"""
+
+
+class Solution(object):
+    def cloneGraph(self, node):
+        """
+        :type node: Node
+        :rtype: Node
+        """
+
+        if (node == None):
+            return None
+
+        head = Node(node.val, [])
+
+        d = {}
+        d[node] = head
+
+        queue = [node]
+
+        while (queue):
+
+            n1 = queue.pop(0)
+
+            for nei in n1.neighbors:
+
+                if (nei not in d):
+                    queue.append(nei)
+                    d[nei] = Node(nei.val)
+
+                # add this nei in d[n1]'s neighours
+                d[n1].neighbors.append(d[nei])
+
+        return head
+
+
+
+
+
+
+
+
+
+
