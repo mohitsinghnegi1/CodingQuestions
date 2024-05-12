@@ -1,4 +1,4 @@
-Qus: https: // leetcode.com/problems/arranging-coins/
+# Qus: https: // leetcode.com/problems/arranging-coins/
 
 
 class Solution(object):
